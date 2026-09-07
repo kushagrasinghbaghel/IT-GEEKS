@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "question": "What happens if I miss the End-Semester Examination because of my sister's wedding?",
+    "adjacent_topic": "Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)",
+    "explanation": "Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned."
+  },
+  {
+    "id": 2,
+    "question": "Can I bring my personal electric scooter and charge it in my hostel room without paying extra utility charges?",
+    "adjacent_topic": "Hostel electrical appliances policy (Covers laptops, mobiles, kettles, heaters)",
+    "explanation": "Section 4.1 covers low-power grooming tools, laptops, and bans induction/heaters, but has no provisions regarding EV batteries, charging stations, or e-scooters."
+  },
+  {
+    "id": 3,
+    "question": "Is there any financial aid or tuition waiver available for students whose parents are alumni of Medi-Caps University?",
+    "adjacent_topic": "Scholarship schemes (Covers Chancellor merit, defense wards, siblings, single girl child)",
+    "explanation": "Section 3 covers defense, siblings, and single girl child, but contains no alumni legacy concession or alumni child fee rebate."
+  },
+  {
+    "id": 4,
+    "question": "Can I keep an emotional support dog, cat, or small aquarium in the girls' hostel room?",
+    "adjacent_topic": "Hostel room occupancy and furniture regulations",
+    "explanation": "Section 1 and 4 govern furniture and room maintenance, but there is no explicit clause regarding pets, guide animals, or aquariums."
+  },
+  {
+    "id": 5,
+    "question": "What is the penalty if I order food through Swiggy or Zomato to the hostel gate after 10:00 PM?",
+    "adjacent_topic": "Hostel gate timings (9 PM / 9:30 PM) and food delivery up to Gate 1",
+    "explanation": "Hostel §5.1 states delivery boys cannot enter residential blocks and must drop food at Gate 1, but does not specify penalties for deliveries received at the gate after curfew."
+  },
+  {
+    "id": 6,
+    "question": "Can I switch my minor degree specialization from Artificial Intelligence to Robotics in the 6th semester?",
+    "adjacent_topic": "Branch change (1st year only) and honors degree elective tracks",
+    "explanation": "Academic Reg §8 covers engineering branch change at 2nd semester end, and §2.2 covers Honors degrees, but there are no rules for changing minors in the 6th semester."
+  },
+  {
+    "id": 7,
+    "question": "What compensation or liability does the university provide if my laptop is stolen from the Central Library reading hall?",
+    "adjacent_topic": "Library dues and campus property discipline",
+    "explanation": "Library clearances and hostel inspections are covered, but liability, compensation, or CCTV theft investigation policies for personal electronic theft are omitted."
+  },
+  {
+    "id": 8,
+    "question": "Can a day-scholar student stay overnight in a friend's hostel room during exam week by paying a daily guest fee?",
+    "adjacent_topic": "Hostel room occupancy and summer break per-day charges",
+    "explanation": "Hostel §1.2 allows summer stay for enrolled interns, but no provision exists for day-scholar peer guest stays during examination weeks."
+  },
+  {
+    "id": 9,
+    "question": "Are students permitted to operate a paid tutoring startup or freelancing software business from campus Wi-Fi?",
+    "adjacent_topic": "Hostel code of conduct and student discipline",
+    "explanation": "Discipline covers anti-ragging, substance abuse, and vandalism, but there is no commercial usage policy for campus internet or student freelancing."
+  },
+  {
+    "id": 10,
+    "question": "Does Medi-Caps University offer a semester abroad student exchange program for B.Tech CSE students in their 5th semester?",
+    "adjacent_topic": "Curricular structure, CBCS credit framework, and NPTEL credits",
+    "explanation": "Academic Reg §2.2 allows SWAYAM/NPTEL MOOCs for Honors credits, but contains no institutional guidelines or credit transfers for foreign semester exchange programs."
+  },
+  {
+    "id": 11,
+    "question": "Can I get an emergency duplicate physical ID card issued on a Sunday if the main administrative block is closed?",
+    "adjacent_topic": "Duplicate ID card fee (Rs. 500 in 5 working days)",
+    "explanation": "Fee Schedule §3.1 lists Rs. 500 for duplicate ID cards within 5 working days, but no emergency weekend or Sunday issuance service is specified."
+  },
+  {
+    "id": 12,
+    "question": "Is there any attendance concession granted if a student is detained by city traffic police during the morning commute?",
+    "adjacent_topic": "Attendance duty leave and institutional representation",
+    "explanation": "Academic Reg §4.3 covers Duty Leave for university sports and conferences, but unforeseen transit delays or traffic detainments are not recognized."
+  },
+  {
+    "id": 13,
+    "question": "Can I take a one-year gap year or semester sabbatical after my second year to pursue an unpaid government fellowship?",
+    "adjacent_topic": "Maximum duration for degree completion (N+2 rule: 6 years for B.Tech)",
+    "explanation": "Academic Reg §7.2 specifies the 6-year maximum duration for completion, but does not provide formal criteria for taking voluntary gap years or sabbatical breaks."
+  },
+  {
+    "id": 14,
+    "question": "Can I submit my handwritten laboratory assignments digitally on an iPad using Apple Pencil instead of a paper practical file?",
+    "adjacent_topic": "Continuous Internal Assessment (CIA) laboratory evaluation",
+    "explanation": "Academic Reg §5.1 and §6.3 specify 50% pass criteria in lab evaluations, but medium of submission (digital stylus tablet vs bound hardcopy file) is not prescribed."
+  },
+  {
+    "id": 15,
+    "question": "Can male and female students collaborate together on group projects in the 24/7 central library study cubicles after 8:00 PM?",
+    "adjacent_topic": "Hostel gate timings and campus code of conduct",
+    "explanation": "Hostel timings are 9:00 PM / 9:30 PM, but internal gender segregation or co-ed collaboration guidelines inside central library after 8 PM are not stated."
+  },
+  {
+    "id": 16,
+    "question": "What percentage of the university bus transport fee is refunded if I cancel my bus pass midway through the semester?",
+    "adjacent_topic": "University Bus Transportation Fee slabs and general tuition refund",
+    "explanation": "Fee Schedule §2.2 lists annual transport slabs (Rs. 20,000-28,000) and notes passes are non-transferable, but sets no mid-term partial refund formula for transit."
+  },
+  {
+    "id": 17,
+    "question": "Is there any daily stipend or honorarium provided by the university for student volunteers in the annual cultural fest Moonstone?",
+    "adjacent_topic": "Student representation duty leave and graduate teaching assistantships",
+    "explanation": "Scholarship §5.1 covers Rs. 8,000 GTA for PG students and Reg §4.3 covers Duty Leave, but cultural fest volunteer honorariums are not defined."
+  },
+  {
+    "id": 18,
+    "question": "Can a student request vegan, keto, or gluten-free meals on medical advice in the university hostel mess?",
+    "adjacent_topic": "Hostel mess schedule and meal rebate of Rs. 120/day",
+    "explanation": "Hostel §5.1 establishes standard dining schedules and food tray rules, but dietary customization or specialized allergen meals are not addressed."
+  },
+  {
+    "id": 19,
+    "question": "Can a student dispute a Turnitin plagiarism report if the software flags their own previously published IEEE conference paper?",
+    "adjacent_topic": "Doctoral research committee progress and unfair means penalties",
+    "explanation": "Scholarship §5.2 covers PhD review and Ordinance 14 covers exam malpractice, but self-plagiarism or preprint exclusion thresholds in Turnitin are absent."
+  },
+  {
+    "id": 20,
+    "question": "Is recreational drone flying allowed on the university sports ground on Sundays for student YouTube channels?",
+    "adjacent_topic": "Sports ground usage and campus code of conduct",
+    "explanation": "Hostel §3 covers athletic tournaments and grounds, but airspace restrictions, drone permits, and recreational videography rules are unstated."
+  },
+  {
+    "id": 21,
+    "question": "Can a day-scholar student access the campus gymnasium before 8:00 AM without paying an annual sports subscription?",
+    "adjacent_topic": "Sports scholarships and hostel residential facilities",
+    "explanation": "Sports facilities are mentioned in athletic scholarships and hostel sections, but day-scholar gym access hours and fee memberships are not mentioned."
+  },
+  {
+    "id": 22,
+    "question": "What is the procedure if a professor consistently arrives 20 minutes late to classroom lectures?",
+    "adjacent_topic": "Attendance calculation framework and contact hours delivered",
+    "explanation": "Academic Reg §4.1 outlines hourly student attendance tracking, but faculty punctuality grievances or teacher delay reporting channels are not covered."
+  },
+  {
+    "id": 23,
+    "question": "Can a student wear religious headgear or turbans during mechanical engineering workshop lathe machine operations?",
+    "adjacent_topic": "Curricular laboratory credits and campus discipline",
+    "explanation": "Workshop practicals are required under §2.1, but specific safety dress codes, protective headgear waivers, or lathe attire rules are absent."
+  },
+  {
+    "id": 24,
+    "question": "Can international or NRI students pay university tuition fees using cryptocurrency or Bitcoin?",
+    "adjacent_topic": "Fee payment modes (ERP Gateway, Net Banking, UPI, Challan)",
+    "explanation": "Fee Schedule §1.1 specifies Net Banking, UPI, Debit/Credit card, and Bank Challan, but crypto assets or foreign digital currency escrow are not explicitly addressed."
+  },
+  {
+    "id": 25,
+    "question": "Can students install their own personal window air conditioners or portable coolers in hostel rooms by paying an extra electricity meter deposit?",
+    "adjacent_topic": "Prohibited electrical appliances (heaters, kettles, mini-fridges) and room tiers",
+    "explanation": "Hostel §4.1 bans induction cookers, heaters, and irons, and Fee Schedule lists Air-Cooled rooms, but personal tenant AC installation or sub-metering is unaddressed."
+  }
+]

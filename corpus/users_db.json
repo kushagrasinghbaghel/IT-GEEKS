@@ -1,0 +1,20 @@
+{
+  "student@medicaps.ac.in": {
+    "email": "student@medicaps.ac.in",
+    "name": "Aarav Sharma",
+    "enrollment_no": "EN21CS301045",
+    "department": "Computer Science & Engineering",
+    "role": "student",
+    "password_hash": "f3051f8341abafcb11536040e475e0c61659dd502f4fdd5ee0a030acde343f3c",
+    "created_at": 1788809630.437558
+  },
+  "admin@medicaps.ac.in": {
+    "email": "admin@medicaps.ac.in",
+    "name": "Dr. Sunita Kulkarni",
+    "enrollment_no": "FAC-REG-104",
+    "department": "Academic Registrar Office",
+    "role": "admin",
+    "password_hash": "a505e9e9f448924852057dadfcd05159d43ea143344135a47acb1ba0c34cf05a",
+    "created_at": 1788809630.437558
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "contradiction_attendance_condonation",
+    "topic": "Attendance Requirement & Condonation for End-Semester Examinations",
+    "trigger_keywords": ["attendance", "condone", "condonation", "shortage", "debarred", "75%", "65%", "short attendance", "minimum attendance"],
+    "description": "Direct conflict between Academic Regulations and Ordinance No. 14 regarding whether attendance below 75% can be condoned by paying a fee without medical board certification.",
+    "clause_a": {
+      "document": "medicaps_academic_regulations_2024.md",
+      "clause_ref": "Academic Regulations § 4.2",
+      "title": "Mandatory Minimum Attendance Requirement",
+      "excerpt": "Every registered student must achieve a minimum attendance of 75% in theory lectures and practical/tutorial classes separately... The Head of Department, Dean of Faculty, and Dean of Academic Affairs possess NO authority to condone attendance below 75% under any standard administrative procedure, personal hardship, or monetary penalty. Condonation below 75% may ONLY be granted on severe medical grounds certified by the University Medical Board (absolute floor 70.0%). No condonation fee, special fine, or executive waiver is admissible.",
+      "threshold": "Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted."
+    },
+    "clause_b": {
+      "document": "medicaps_ordinance_14_exam_conduct.pdf",
+      "clause_ref": "Ordinance No. 14 § 8.1",
+      "title": "Statutory Condonation by Dean of Academic Affairs",
+      "excerpt": "Notwithstanding any general academic attendance rules or departmental regulations, the Dean of Academic Affairs is vested with statutory discretionary authority to condone attendance shortage for students whose cumulative semester attendance in any subject falls between 65.0% and 74.9%. Such condonation shall be granted upon payment of a prescribed Condonation Fee of Rs. 1,500 per subject... students are NOT required to present medical board certificates or hospital inpatient documentation.",
+      "threshold": "65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate."
+    },
+    "clause_c_note": "Hostel Code § 3.2 also permits 60% threshold for AIU/national sports participants.",
+    "analysis": "Academic Regulations § 4.2 establishes a strict, non-waivable 75% rule (floor 70% exclusively for certified medical emergencies) and expressly bans monetary condonation. Conversely, Ordinance No. 14 § 8.1 grants the Dean of Academic Affairs statutory power to condone attendance down to 65% on payment of a Rs. 1,500 fee without medical records. These two statutory instruments directly contradict each other."
+  },
+  {
+    "id": "contradiction_grace_marks",
+    "topic": "Award of Grace Marks & Moderation in Theory Examinations",
+    "trigger_keywords": ["grace mark", "grace marks", "moderation", "passing mark", "pass marks", "failing by", "40%", "39", "failing in two subjects", "bonus marks"],
+    "description": "Direct conflict regarding whether grace marks can be awarded to pass a student failing by a narrow margin.",
+    "clause_a": {
+      "document": "medicaps_academic_regulations_2024.md",
+      "clause_ref": "Academic Regulations § 6.3",
+      "title": "Passing Standards and Absolute Prohibition of Grace Marks",
+      "excerpt": "To pass any credit-bearing theory course, a student must secure a minimum of 40% marks in ESE and 40% in aggregate... In strict adherence to UGC autonomous guidelines and Academic Council Resolution AC/2023/IV-12, no grace marks, moderation adjustments, or compensatory scoring shall be awarded under any circumstances. Neither the Controller of Examinations, Dean of Academic Affairs, nor the Vice-Chancellor possesses statutory authority to award grace marks.",
+      "threshold": "Zero grace marks. Absolute prohibition across all subjects."
+    },
+    "clause_b": {
+      "document": "medicaps_ordinance_14_exam_conduct.pdf",
+      "clause_ref": "Ordinance No. 14 § 11.5",
+      "title": "Statutory Discretion for Award of Grace Marks",
+      "excerpt": "Notwithstanding any general passing threshold or autonomous departmental grading guideline, the Controller of Examinations, with the prior written sanction of the Vice-Chancellor, is empowered to award up to a maximum of five (5) grace marks to a candidate who fails in not more than two (2) theory subjects in any regular semester examination, in order to enable the candidate to obtain the minimum passing standard (40 marks out of 100).",
+      "threshold": "Up to 5 grace marks across max 2 theory subjects awarded by Controller of Examinations with VC approval."
+    },
+    "clause_c_note": "A student failing with 36/100 would fail under Academic Reg §6.3 but qualify for degree pass under Ordinance §11.5.",
+    "analysis": "Academic Regulations § 6.3 explicitly forbids any grace marks, stating neither the CoE nor VC has legal authority to award them. In direct contrast, Ordinance No. 14 § 11.5 empowers the CoE with VC approval to grant up to 5 grace marks across up to two subjects, even adding a 'G' notation to the transcript."
+  },
+  {
+    "id": "contradiction_hostel_fee_refund",
+    "topic": "Hostel Accommodation Fee Refund on Early Cancellation/Withdrawal",
+    "trigger_keywords": ["hostel refund", "hostel fee refund", "vacating hostel", "room refund", "cancellation of hostel", "hostel withdrawal", "15 days", "accommodation refund"],
+    "description": "Direct contradiction between the Hostel Code of Conduct and the Official Fee Schedule on whether hostel fees are 80% refundable or 0% non-refundable upon cancellation within 15 days.",
+    "clause_a": {
+      "document": "medicaps_hostel_code_and_rules.md",
+      "clause_ref": "Hostel Code of Conduct § 7.2",
+      "title": "Hostel Fee Refund on Early Withdrawal",
+      "excerpt": "If a newly admitted or continuing resident student submits a formal application for cancellation of hostel admission and vacates their room within fifteen (15) calendar days from the official date of semester commencement, eighty percent (80%) of the total hostel accommodation fee shall be refunded to the student's registered bank account. The residential security caution deposit of Rs. 10,000 is fully refundable within thirty (30) days.",
+      "threshold": "80% refund of accommodation fee within 15 days; 100% caution deposit refund."
+    },
+    "clause_b": {
+      "document": "medicaps_fee_deadlines_schedule.md",
+      "clause_ref": "Fee Schedule & Deadlines § 2.4",
+      "title": "Hostel Accommodation Fee Refund Policy",
+      "excerpt": "Notwithstanding any general university admission refund policy or statements contained in residential handbooks, all hostel room accommodation fees, mess infrastructure fees, and amenities charges are 100% strictly non-refundable once the room allotment order is generated and the room key is issued to the resident. Under no circumstances shall an 80%, 50%, or partial refund be issued if a resident vacates the hostel within 15 days, 30 days, or at any subsequent date. Caution deposit is refundable subject to a mandatory Rs. 2,000 deduction.",
+      "threshold": "0% refund (strictly non-refundable once key issued); caution deposit subject to Rs. 2,000 deduction."
+    },
+    "clause_c_note": "A student withdrawing on Day 10 is promised an 80% refund (~Rs. 68,000 to 92,000) by the Hostel Handbook, but denied all refund by the Finance Fee Schedule.",
+    "analysis": "Hostel Handbook § 7.2 clearly offers an 80% accommodation fee refund within 15 days of semester start and full caution deposit return. Conversely, Fee Schedule § 2.4 declares all hostel room fees 100% non-refundable once room keys are issued and imposes a mandatory Rs. 2,000 administrative charge on caution deposits, explicitly overriding residential handbooks."
+  }
+]
