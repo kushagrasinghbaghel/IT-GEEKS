@@ -1,5 +1,24 @@
 [
   {
+    "id": "rec_1788810087439",
+    "timestamp": "2026-09-08 01:11:27",
+    "epoch": 1788810087.4395456,
+    "user_email": "guest@medicaps.ac.in",
+    "query": "Can attendance between 65% and 75% be condoned by paying a fee?",
+    "verdict": "conflict",
+    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 4.2 (medicaps_academic_regulations_2024.md)** prescribes: \"S...",
+    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 4.2 (medicaps_academic_regulations_2024.md)** prescribes: \"Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted.\"\n\n\u2022 **Ordinance No. 14 \u00a7 8.1 (medicaps_ordinance_14_exam_conduct.pdf)** stipulates: \"65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate.\"\n\n**Comparative Discrepancy:** Academic Regulations \u00a7 4.2 establishes a strict, non-waivable 75% rule (floor 70% exclusively for certified medical emergencies) and expressly bans monetary condonation. Conversely, Ordinance No. 14 \u00a7 8.1 grants the Dean of Academic Affairs statutory power to condone attendance down to 65% on payment of a Rs. 1,500 fee without medical records. These two statutory instruments directly contradict each other.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
+    "latency_ms": 9.93,
+    "citations_count": 3,
+    "citations_summary": [
+      "Academic Regulations \u00a7 4.2",
+      "Ordinance No. 14 \u00a7 8.1",
+      "Hostel Code of Conduct \u00a7 3.2"
+    ],
+    "conflict_detected": true,
+    "conflict_title": "Attendance Requirement & Condonation for End-Semester Examinations"
+  },
+  {
     "id": "rec_1788809802523",
     "timestamp": "2026-09-08 01:06:42",
     "epoch": 1788809802.5232055,
