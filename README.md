@@ -1,6 +1,7 @@
-# 🏛️ Medi-Caps University Academic Regulations QA & Conflict Detection Service
+#  University Academic Regulations QA & Conflict Detection Service
 
 An advanced Question-Answering (RAG) and Statutory Contradiction Detection engine built for **Medi-Caps University, Indore**.
+It is not Universal, but can be adapted by any university and rules can be edited by university regulaters
 
 Unlike naive chatbots that hallucinate or sound deceptively confident, this service:
 1. **Cites exact statutory clauses** alongside normalized similarity scores.
