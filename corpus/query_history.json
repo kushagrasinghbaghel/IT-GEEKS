@@ -1,5 +1,149 @@
 [
   {
+    "id": "rec_1788848537834",
+    "timestamp": "2026-09-08 11:52:17",
+    "epoch": 1788848537.834767,
+    "user_email": "en23cs301550@medicaps.ac.in",
+    "query": "Can the Vice Chancellor or Controller of Examinations award grace marks if I am failing a subject?",
+    "verdict": "conflict",
+    "answer_preview": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 6.3**: Zero grace marks. Absolute prohibition across all subj...",
+    "full_answer": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 6.3**: Zero grace marks. Absolute prohibition across all subjects.\n\u2022 **Ordinance No. 14 \u00a7 11.5**: Up to 5 grace marks across max 2 theory subjects awarded by Controller of Examinations with VC approval.\n\nNeither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below.",
+    "latency_ms": 10.0,
+    "citations_count": 2,
+    "citations_summary": [
+      "Academic Regulations \u00a7 6.3",
+      "Ordinance No. 14 \u00a7 11.5"
+    ],
+    "conflict_detected": true,
+    "conflict_title": "Award of Grace Marks & Moderation in Theory Examinations"
+  },
+  {
+    "id": "rec_1788848315412",
+    "timestamp": "2026-09-08 11:48:35",
+    "epoch": 1788848315.413376,
+    "user_email": "en23cs301550@medicaps.ac.in",
+    "query": "minimum attendance",
+    "verdict": "conflict",
+    "answer_preview": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or admi...",
+    "full_answer": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted.\n\u2022 **Ordinance No. 14 \u00a7 8.1**: 65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate.\n\nNeither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below.",
+    "latency_ms": 6.0,
+    "citations_count": 2,
+    "citations_summary": [
+      "Academic Regulations \u00a7 4.2",
+      "Ordinance No. 14 \u00a7 8.1"
+    ],
+    "conflict_detected": true,
+    "conflict_title": "Attendance Requirement & Condonation for End-Semester Examinations"
+  },
+  {
+    "id": "rec_1788848281458",
+    "timestamp": "2026-09-08 11:48:01",
+    "epoch": 1788848281.458984,
+    "user_email": "en23cs301550@medicaps.ac.in",
+    "query": "What are the eligibility criteria and minimum CGPA for B.Tech branch change after first year?",
+    "verdict": "answered",
+    "answer_preview": "**Academic Regulations \u00a7 8.1** (\u00a7 8.1 Eligibility and Modalities) stipulates:\n\n> \"Branch change is considered strictly at the conclusion of the First Year (Second Semester) and applies only against vacancies existing wit...",
+    "full_answer": "**Academic Regulations \u00a7 8.1** (\u00a7 8.1 Eligibility and Modalities) stipulates:\n\n> \"Branch change is considered strictly at the conclusion of the First Year (Second Semester) and applies only against vacancies existing within the sanctioned intake of the receiving discipline.\"\n\nAdditionally: **Eligibility Criteria:**",
+    "latency_ms": 8.99,
+    "citations_count": 2,
+    "citations_summary": [
+      "Academic Regulations \u00a7 8.1",
+      "Hostel Code of Conduct \u00a7 1.1"
+    ],
+    "conflict_detected": false,
+    "conflict_title": null
+  },
+  {
+    "id": "rec_1788848267496",
+    "timestamp": "2026-09-08 11:47:47",
+    "epoch": 1788848267.4960277,
+    "user_email": "en23cs301550@medicaps.ac.in",
+    "query": "What percentage of hostel accommodation fee is refunded if I cancel within 15 days of semester start?",
+    "verdict": "conflict",
+    "answer_preview": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2**: 80% refund of accommodation fee within 15 days; 100%...",
+    "full_answer": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2**: 80% refund of accommodation fee within 15 days; 100% caution deposit refund.\n\u2022 **Fee Schedule & Deadlines \u00a7 2.4**: 0% refund (strictly non-refundable once key issued); caution deposit subject to Rs. 2,000 deduction.\n\nNeither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below.",
+    "latency_ms": 12.38,
+    "citations_count": 2,
+    "citations_summary": [
+      "Hostel Code of Conduct \u00a7 7.2",
+      "Fee Schedule & Deadlines \u00a7 2.4"
+    ],
+    "conflict_detected": true,
+    "conflict_title": "Hostel Accommodation Fee Refund on Early Cancellation/Withdrawal"
+  },
+  {
+    "id": "rec_1788848222711",
+    "timestamp": "2026-09-08 11:47:02",
+    "epoch": 1788848222.7116883,
+    "user_email": "en23cs301550@medicaps.ac.in",
+    "query": "Attendance Requirement & Condonation for End-Semester Examinations",
+    "verdict": "conflict",
+    "answer_preview": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or admi...",
+    "full_answer": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted.\n\u2022 **Ordinance No. 14 \u00a7 8.1**: 65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate.\n\nNeither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below.",
+    "latency_ms": 8.99,
+    "citations_count": 2,
+    "citations_summary": [
+      "Academic Regulations \u00a7 4.2",
+      "Ordinance No. 14 \u00a7 8.1"
+    ],
+    "conflict_detected": true,
+    "conflict_title": "Attendance Requirement & Condonation for End-Semester Examinations"
+  },
+  {
+    "id": "rec_1788848196453",
+    "timestamp": "2026-09-08 11:46:36",
+    "epoch": 1788848196.4534082,
+    "user_email": "en23cs301550@medicaps.ac.in",
+    "query": "What percentage of hostel accommodation fee is refunded if I cancel within 15 days of semester start?",
+    "verdict": "conflict",
+    "answer_preview": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2**: 80% refund of accommodation fee within 15 days; 100%...",
+    "full_answer": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2**: 80% refund of accommodation fee within 15 days; 100% caution deposit refund.\n\u2022 **Fee Schedule & Deadlines \u00a7 2.4**: 0% refund (strictly non-refundable once key issued); caution deposit subject to Rs. 2,000 deduction.\n\nNeither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below.",
+    "latency_ms": 11.0,
+    "citations_count": 2,
+    "citations_summary": [
+      "Hostel Code of Conduct \u00a7 7.2",
+      "Fee Schedule & Deadlines \u00a7 2.4"
+    ],
+    "conflict_detected": true,
+    "conflict_title": "Hostel Accommodation Fee Refund on Early Cancellation/Withdrawal"
+  },
+  {
+    "id": "rec_1788847918948",
+    "timestamp": "2026-09-08 11:41:58",
+    "epoch": 1788847918.9482276,
+    "user_email": "en23cs301550@medicaps.ac.in",
+    "query": "minimum attendance with approved medical certificate",
+    "verdict": "conflict",
+    "answer_preview": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or admi...",
+    "full_answer": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted.\n\u2022 **Ordinance No. 14 \u00a7 8.1**: 65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate.\n\nNeither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below.",
+    "latency_ms": 11.64,
+    "citations_count": 2,
+    "citations_summary": [
+      "Academic Regulations \u00a7 4.2",
+      "Ordinance No. 14 \u00a7 8.1"
+    ],
+    "conflict_detected": true,
+    "conflict_title": "Attendance Requirement & Condonation for End-Semester Examinations"
+  },
+  {
+    "id": "rec_1788847672558",
+    "timestamp": "2026-09-08 11:37:52",
+    "epoch": 1788847672.5586152,
+    "user_email": "student@medicaps.ac.in",
+    "query": "minimum attendance",
+    "verdict": "conflict",
+    "answer_preview": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or admi...",
+    "full_answer": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted.\n\u2022 **Ordinance No. 14 \u00a7 8.1**: 65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate.\n\nNeither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below.",
+    "latency_ms": 9.28,
+    "citations_count": 2,
+    "citations_summary": [
+      "Academic Regulations \u00a7 4.2",
+      "Ordinance No. 14 \u00a7 8.1"
+    ],
+    "conflict_detected": true,
+    "conflict_title": "Attendance Requirement & Condonation for End-Semester Examinations"
+  },
+  {
     "id": "rec_1788847645329",
     "timestamp": "2026-09-08 11:37:25",
     "epoch": 1788847645.3294537,

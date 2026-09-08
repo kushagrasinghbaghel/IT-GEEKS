@@ -16,5 +16,14 @@
     "role": "admin",
     "password_hash": "a505e9e9f448924852057dadfcd05159d43ea143344135a47acb1ba0c34cf05a",
     "created_at": 1788809630.437558
+  },
+  "en23cs301550@medicaps.ac.in": {
+    "email": "en23cs301550@medicaps.ac.in",
+    "name": "Kushagra Singh",
+    "enrollment_no": "EN23CS301550",
+    "department": "Computer Science & Engineering",
+    "role": "student",
+    "password_hash": "e111b417f5798bb21f72a5d635a259a953756d104ae619fb1949b46760b415e9",
+    "created_at": 1788847882.2839026
   }
 }
