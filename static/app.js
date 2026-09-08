@@ -8,22 +8,15 @@ const state = {
   token: localStorage.getItem('medicaps_auth_token') || null,
   currentUser: null,
   lastAnswerText: '',
-  benchmarkResults: [],
-  activeBenchmarkFilter: 'all',
-  activeHistoryFilter: 'all',
-  corpusDocs: [],
-  selectedDoc: null
+  activeHistoryFilter: 'all'
 };
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', async () => {
   await checkAuthSession();
-  await loadCorpusStats();
   await loadContradictions();
-  await loadCorpusExplorer();
   await loadHistory('all');
   
-  // Set default query placeholder
   const input = document.getElementById('query-input');
   if (input) input.focus();
 });
@@ -34,8 +27,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 function switchPage(pageId) {
   state.activePage = pageId;
 
-  // Update nav buttons
-  const navIds = ['qa', 'conflicts', 'corpus', 'benchmark', 'history'];
+  // Update nav buttons (3 main tabs: qa, conflicts, history)
+  const navIds = ['qa', 'conflicts', 'history'];
   navIds.forEach(id => {
     const btn = document.getElementById(`nav-${id}`);
     const page = document.getElementById(`page-${id}`);
@@ -55,14 +48,8 @@ function switchPage(pageId) {
     }
   });
 
-  // Lazy load page specific data
   if (pageId === 'history') {
     loadHistory(state.activeHistoryFilter);
-  } else if (pageId === 'corpus' && !state.selectedDoc && state.corpusDocs.length > 0) {
-    selectCorpusDocument(state.corpusDocs[0].name);
-  } else if (pageId === 'benchmark' && state.benchmarkResults.length === 0) {
-    // pre-load benchmark list
-    loadInitialBenchmarkData();
   }
 }
 
@@ -243,7 +230,6 @@ async function executeAskQuery(query) {
   const responseContainer = document.getElementById('qa-response-container');
   const submitBtn = document.getElementById('ask-submit-btn');
 
-  // UI state: loading
   if (loading) loading.classList.remove('hidden');
   if (responseContainer) responseContainer.classList.add('hidden');
   if (submitBtn) submitBtn.disabled = true;
@@ -299,39 +285,38 @@ function renderQAResponse(data) {
       verdictPill.innerHTML = `<i class="fa-solid fa-circle-check mr-1.5 text-emerald-600"></i> ANSWERED WITH CITATIONS`;
     } else if (data.verdict === 'conflict') {
       verdictPill.className = "inline-flex items-center px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase bg-amber-100 text-amber-900 border border-amber-300 animate-pulse";
-      verdictPill.innerHTML = `<i class="fa-solid fa-scale-unbalanced mr-1.5 text-amber-600"></i> STATUTORY CONFLICT DETECTED`;
+      verdictPill.innerHTML = `<i class="fa-solid fa-scale-unbalanced mr-1.5 text-amber-600"></i> CONFLICT DETECTED`;
     } else if (data.verdict === 'not_covered') {
       verdictPill.className = "inline-flex items-center px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase bg-slate-200 text-slate-800 border border-slate-300";
       verdictPill.innerHTML = `<i class="fa-solid fa-circle-minus mr-1.5 text-slate-500"></i> NOT COVERED (CORPUS SILENT)`;
     }
   }
 
-  // 3. Render Answer Content
+  // 3. Render Crisp, Limited Answer Content
   if (answerContent) {
     answerContent.innerHTML = formatMarkdownToHTML(data.answer);
   }
 
-  // 4. Handle Conflict Card
+  // 4. Handle Highly Readable Conflict Card
   if (conflictCard) {
     if (data.verdict === 'conflict' && data.conflict_details) {
       conflictCard.classList.remove('hidden');
       const conf = data.conflict_details;
       document.getElementById('conflict-card-title').textContent = conf.title || 'Direct Regulatory Contradiction';
-      document.getElementById('conflict-card-desc').textContent = conf.description || 'Statutory discrepancy detected between clauses.';
 
-      // Clause A
-      document.getElementById('clause-a-ref').textContent = conf.clause_a.section_ref;
+      // Clause A Box
+      document.getElementById('clause-a-ref').textContent = `${conf.clause_a.section_ref} (${conf.clause_a.document})`;
       document.getElementById('clause-a-excerpt').textContent = `"${conf.clause_a.excerpt}"`;
       document.getElementById('clause-a-threshold').textContent = conf.clause_a.threshold;
-      document.getElementById('clause-a-sim').textContent = `${(conf.clause_a.similarity_score * 100).toFixed(1)}% Match`;
+      document.getElementById('clause-a-sim').textContent = `${(conf.clause_a.similarity_score * 100).toFixed(0)}% Match`;
 
-      // Clause B
-      document.getElementById('clause-b-ref').textContent = conf.clause_b.section_ref;
+      // Clause B Box
+      document.getElementById('clause-b-ref').textContent = `${conf.clause_b.section_ref} (${conf.clause_b.document})`;
       document.getElementById('clause-b-excerpt').textContent = `"${conf.clause_b.excerpt}"`;
       document.getElementById('clause-b-threshold').textContent = conf.clause_b.threshold;
-      document.getElementById('clause-b-sim').textContent = `${(conf.clause_b.similarity_score * 100).toFixed(1)}% Match`;
+      document.getElementById('clause-b-sim').textContent = `${(conf.clause_b.similarity_score * 100).toFixed(0)}% Match`;
 
-      // Comparative & Guidance
+      // Comparative Analysis & Guidance
       document.getElementById('conflict-analysis-text').textContent = conf.comparative_analysis;
       document.getElementById('conflict-action-text').textContent = conf.recommended_action;
     } else {
@@ -353,7 +338,7 @@ function renderQAResponse(data) {
     }
   }
 
-  // 6. Populate Cited Regulatory Passages (Side-by-Side Panel)
+  // 6. Populate Highly Readable Cited Regulatory Passages (Side-by-Side Panel)
   if (citationsList) {
     citationsList.innerHTML = '';
     const citations = data.citations || [];
@@ -366,39 +351,36 @@ function renderQAResponse(data) {
         </div>
       `;
     } else {
-      citations.forEach((c, idx) => {
+      citations.forEach((c) => {
         const simPct = (c.similarity_score * 100).toFixed(1);
         let formatBadge = '';
         if (c.format === 'pdf') {
-          formatBadge = '<span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-red-100 text-red-700">PDF ORDINANCE</span>';
+          formatBadge = '<span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-red-100 text-red-700"><i class="fa-solid fa-file-pdf mr-0.5"></i> PDF</span>';
         } else if (c.format === 'tabular') {
-          formatBadge = '<span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-emerald-100 text-emerald-700">TABULAR</span>';
+          formatBadge = '<span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-emerald-100 text-emerald-700"><i class="fa-solid fa-table mr-0.5"></i> Table</span>';
         } else {
-          formatBadge = '<span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-blue-100 text-blue-700">MARKDOWN</span>';
+          formatBadge = '<span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-blue-100 text-blue-700"><i class="fa-regular fa-file-lines mr-0.5"></i> Rules</span>';
         }
 
         const card = document.createElement('div');
-        card.className = "bg-slate-50 hover:bg-slate-100/80 p-3.5 rounded-xl border border-slate-200 transition-all space-y-2 text-xs";
+        card.className = "bg-white hover:bg-slate-50 p-3.5 rounded-xl border border-slate-200 shadow-xs transition-all space-y-2 text-xs";
         card.innerHTML = `
           <div class="flex items-center justify-between gap-1 flex-wrap">
             <div class="flex items-center space-x-1.5">
-              <span class="font-bold text-slate-800 text-[11px]">${c.section_ref}</span>
+              <span class="font-bold text-slate-900 text-xs">${c.section_ref}</span>
               ${formatBadge}
             </div>
-            <div class="flex items-center space-x-1">
-              <span class="text-[10px] font-mono font-bold text-medicaps-700">${simPct}%</span>
-            </div>
-          </div>
-          
-          <div class="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
-            <div class="bg-medicaps-600 h-full rounded-full" style="width: ${simPct}%"></div>
+            <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-blue-50 text-blue-800 border border-blue-200">
+              ${simPct}% Match
+            </span>
           </div>
 
-          <p class="text-slate-600 leading-relaxed font-serif bg-white p-2 rounded border border-slate-200/80 text-[11px]">
+          <div class="text-slate-700 font-serif bg-slate-50 p-2.5 rounded-lg border-l-2 border-slate-400 text-[11px] leading-relaxed italic">
             "${c.excerpt}"
-          </p>
+          </div>
+
           <div class="text-[10px] text-slate-400 flex items-center justify-between">
-            <span>Doc: ${c.doc_name}</span>
+            <span class="truncate max-w-[180px]">Doc: ${c.doc_name}</span>
             <span class="text-slate-500 font-medium">${c.title || ''}</span>
           </div>
         `;
@@ -407,7 +389,6 @@ function renderQAResponse(data) {
     }
   }
 
-  // Show container and smoothly scroll to it
   if (responseContainer) {
     responseContainer.classList.remove('hidden');
     responseContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -417,7 +398,7 @@ function renderQAResponse(data) {
 function copyAnswerToClipboard() {
   if (state.lastAnswerText) {
     navigator.clipboard.writeText(state.lastAnswerText);
-    alert('Official answer copied to clipboard!');
+    alert('Answer copied to clipboard!');
   }
 }
 
@@ -427,6 +408,7 @@ function formatMarkdownToHTML(text) {
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.*?)\*/g, '<em>$1</em>')
     .replace(/^• (.*?)$/gm, '<li class="ml-4 list-disc">$1</li>')
+    .replace(/^> "(.*?)"$/gm, '<blockquote class="border-l-4 border-medicaps-600 pl-3 py-1 my-2 bg-slate-50 rounded-r text-slate-800 italic font-serif">"$1"</blockquote>')
     .replace(/\n\n/g, '<p class="my-2"></p>')
     .replace(/\n/g, '<br>');
   return html;
@@ -449,54 +431,54 @@ async function loadContradictions() {
       card.className = "bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4 hover:shadow-md transition-shadow";
       card.innerHTML = `
         <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-100 pb-3">
-          <div class="flex items-center space-x-2">
-            <span class="w-7 h-7 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs">
+          <div class="flex items-center space-x-3">
+            <span class="w-8 h-8 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center font-extrabold text-xs">
               #${idx + 1}
             </span>
-            <h3 class="font-bold text-base text-slate-800">${c.topic}</h3>
+            <h3 class="font-extrabold text-base text-slate-900">${c.topic}</h3>
           </div>
-          <button onclick="setQueryAndSubmit('${c.topic}')" class="px-3 py-1.5 rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-800 text-xs font-semibold flex items-center gap-1.5 transition-colors">
-            <i class="fa-solid fa-play text-[10px]"></i> Test Query
+          <button onclick="setQueryAndSubmit('${c.topic.replace(/'/g, "\\'")}')" class="px-3 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 text-xs font-bold flex items-center gap-1.5 transition-colors border border-amber-200">
+            <i class="fa-solid fa-play text-[10px]"></i> Test This Contradiction
           </button>
         </div>
 
         <p class="text-xs text-slate-600 leading-relaxed">${c.description}</p>
 
-        <!-- 2-Clause Split Box -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- High-Contrast Dual Clause Comparison -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
           <!-- Clause A -->
-          <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-200 space-y-2 text-xs">
+          <div class="bg-blue-50/60 p-4 rounded-xl border border-blue-200 space-y-2.5 text-xs">
             <div class="flex items-center justify-between">
               <span class="font-bold text-blue-900">${c.clause_a.clause_ref}</span>
-              <span class="text-[10px] text-blue-700 font-mono">${c.clause_a.document}</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-blue-100 text-blue-800 font-mono">${c.clause_a.document}</span>
             </div>
-            <p class="text-slate-700 bg-white p-2.5 rounded border border-blue-100 italic">
+            <div class="text-[11px] font-bold text-blue-900 bg-white p-2 rounded-lg border border-blue-100">
+              ${c.clause_a.threshold}
+            </div>
+            <p class="text-slate-700 italic font-serif leading-relaxed bg-white/70 p-2.5 rounded-lg border-l-2 border-blue-600">
               "${c.clause_a.excerpt}"
             </p>
-            <div class="text-[11px] font-semibold text-blue-900">
-              Rule: ${c.clause_a.threshold}
-            </div>
           </div>
 
           <!-- Clause B -->
-          <div class="bg-purple-50/50 p-4 rounded-xl border border-purple-200 space-y-2 text-xs">
+          <div class="bg-rose-50/60 p-4 rounded-xl border border-rose-200 space-y-2.5 text-xs">
             <div class="flex items-center justify-between">
-              <span class="font-bold text-purple-900">${c.clause_b.clause_ref}</span>
-              <span class="text-[10px] text-purple-700 font-mono">${c.clause_b.document}</span>
+              <span class="font-bold text-rose-900">${c.clause_b.clause_ref}</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-rose-100 text-rose-800 font-mono">${c.clause_b.document}</span>
             </div>
-            <p class="text-slate-700 bg-white p-2.5 rounded border border-purple-100 italic">
+            <div class="text-[11px] font-bold text-rose-900 bg-white p-2 rounded-lg border border-rose-100">
+              ${c.clause_b.threshold}
+            </div>
+            <p class="text-slate-700 italic font-serif leading-relaxed bg-white/70 p-2.5 rounded-lg border-l-2 border-rose-600">
               "${c.clause_b.excerpt}"
             </p>
-            <div class="text-[11px] font-semibold text-purple-900">
-              Rule: ${c.clause_b.threshold}
-            </div>
           </div>
         </div>
 
         <!-- Comparative Analysis -->
         <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1">
-          <span class="font-bold text-slate-900 block">Statutory Contradiction Analysis:</span>
-          <p>${c.analysis}</p>
+          <span class="font-bold text-slate-900 block">Why they directly contradict:</span>
+          <p class="leading-relaxed">${c.analysis}</p>
         </div>
       `;
       container.appendChild(card);
@@ -504,210 +486,6 @@ async function loadContradictions() {
   } catch (err) {
     console.error('Error loading contradictions:', err);
   }
-}
-
-// =========================================================================
-// RULEBOOK CORPUS EXPLORER
-// =========================================================================
-async function loadCorpusStats() {
-  try {
-    const res = await fetch('/corpus/stats');
-    const data = await res.json();
-    const wordEl = document.getElementById('stat-word-count');
-    const expEl = document.getElementById('explorer-total-words');
-    if (wordEl) wordEl.textContent = data.total_words.toLocaleString();
-    if (expEl) expEl.textContent = data.total_words.toLocaleString();
-  } catch (err) {
-    console.error('Stats error:', err);
-  }
-}
-
-async function loadCorpusExplorer() {
-  const tabsContainer = document.getElementById('doc-tabs-container');
-  if (!tabsContainer) return;
-
-  try {
-    const res = await fetch('/corpus/documents');
-    const docs = await res.json();
-    state.corpusDocs = docs;
-
-    tabsContainer.innerHTML = '';
-    docs.forEach((doc, idx) => {
-      const btn = document.createElement('button');
-      btn.className = `px-3 py-1.5 rounded-lg text-xs font-semibold transition-all border ${idx === 0 ? 'bg-medicaps-800 text-white border-medicaps-800' : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'}`;
-      btn.id = `tab-doc-${doc.name}`;
-      btn.textContent = doc.name;
-      btn.onclick = () => selectCorpusDocument(doc.name);
-      tabsContainer.appendChild(btn);
-    });
-
-    if (docs.length > 0) {
-      selectCorpusDocument(docs[0].name);
-    }
-  } catch (err) {
-    console.error('Error loading corpus documents:', err);
-  }
-}
-
-async function selectCorpusDocument(docName) {
-  state.selectedDoc = docName;
-
-  // Update tab highlights
-  state.corpusDocs.forEach(d => {
-    const btn = document.getElementById(`tab-doc-${d.name}`);
-    if (btn) {
-      if (d.name === docName) {
-        btn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-medicaps-800 text-white border border-medicaps-800";
-      } else {
-        btn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-50 text-slate-700 border border-slate-200 hover:bg-slate-100";
-      }
-    }
-  });
-
-  const viewer = document.getElementById('doc-content-viewer');
-  if (viewer) viewer.textContent = 'Loading document text...';
-
-  try {
-    const res = await fetch(`/corpus/document/${encodeURIComponent(docName)}`);
-    const data = await res.json();
-
-    const nameEl = document.getElementById('current-doc-name');
-    const formatEl = document.getElementById('current-doc-format-badge');
-    const wordsEl = document.getElementById('current-doc-words');
-    const chunksEl = document.getElementById('current-doc-chunks');
-    const downloadLink = document.getElementById('current-doc-download-link');
-
-    const docMeta = state.corpusDocs.find(d => d.name === docName) || {};
-
-    if (nameEl) nameEl.textContent = data.name;
-    if (formatEl) {
-      formatEl.textContent = data.format.toUpperCase();
-      formatEl.className = `px-2 py-0.5 rounded text-[10px] font-semibold uppercase ${data.format === 'pdf' ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-700'}`;
-    }
-    if (wordsEl) wordsEl.textContent = docMeta.word_count || 'N/A';
-    if (chunksEl) chunksEl.textContent = docMeta.chunks_count || 'N/A';
-
-    if (data.format === 'pdf' && data.pdf_url) {
-      if (downloadLink) {
-        downloadLink.href = data.pdf_url;
-        downloadLink.classList.remove('hidden');
-      }
-    } else {
-      if (downloadLink) downloadLink.classList.add('hidden');
-    }
-
-    if (viewer) viewer.textContent = data.content;
-  } catch (err) {
-    if (viewer) viewer.textContent = 'Failed to load document content.';
-  }
-}
-
-// =========================================================================
-// BENCHMARK EVALUATOR
-// =========================================================================
-async function loadInitialBenchmarkData() {
-  const tableBody = document.getElementById('benchmark-table-body');
-  if (!tableBody) return;
-
-  try {
-    const unansRes = await fetch('/unanswerable');
-    const unans = await unansRes.json();
-
-    // Default preview table
-    tableBody.innerHTML = `
-      <tr>
-        <td colspan="7" class="px-4 py-8 text-center text-slate-500">
-          Ready to run full evaluation suite (3 Planted Conflicts + 5 Normal Answered + 25 Unanswerable queries).<br>
-          Click <strong class="text-purple-700">"Run Complete Benchmark"</strong> to execute tests in real-time.
-        </td>
-      </tr>
-    `;
-  } catch (err) {}
-}
-
-async function runBenchmarkSuite() {
-  const btn = document.getElementById('run-benchmark-btn');
-  const statusBadge = document.getElementById('benchmark-status-badge');
-  const tableBody = document.getElementById('benchmark-table-body');
-
-  if (btn) btn.disabled = true;
-  if (statusBadge) statusBadge.textContent = 'Executing 33 test cases against regulations pipeline...';
-
-  try {
-    const res = await fetch('/benchmark/run', { method: 'POST' });
-    const data = await res.json();
-    state.benchmarkResults = data.results || [];
-
-    // Update scorecards
-    document.getElementById('bench-total-count').textContent = data.total_tests;
-    document.getElementById('bench-accuracy').textContent = `${data.accuracy_percentage}%`;
-    document.getElementById('bench-conflicts').textContent = `${data.breakdown.conflicts.passed} / ${data.breakdown.conflicts.total}`;
-    document.getElementById('bench-latency').textContent = `${data.average_latency_ms} ms`;
-
-    renderBenchmarkTable(state.benchmarkResults);
-    if (statusBadge) statusBadge.textContent = `Completed in ${data.average_latency_ms * data.total_tests / 1000}s • 100% Passing`;
-  } catch (err) {
-    alert('Benchmark execution failed.');
-    if (statusBadge) statusBadge.textContent = 'Evaluation error';
-  } finally {
-    if (btn) btn.disabled = false;
-  }
-}
-
-function filterBenchmark(category) {
-  state.activeBenchmarkFilter = category;
-  ['all', 'conflict', 'answered', 'not_covered'].forEach(c => {
-    const btn = document.getElementById(`bf-${c}`);
-    if (btn) {
-      if (c === category) btn.classList.add('active');
-      else btn.classList.remove('active');
-    }
-  });
-
-  if (state.benchmarkResults.length > 0) {
-    const filtered = category === 'all' 
-      ? state.benchmarkResults 
-      : state.benchmarkResults.filter(r => r.category === category);
-    renderBenchmarkTable(filtered);
-  }
-}
-
-function renderBenchmarkTable(results) {
-  const tableBody = document.getElementById('benchmark-table-body');
-  if (!tableBody) return;
-
-  tableBody.innerHTML = '';
-  results.forEach((r, idx) => {
-    const tr = document.createElement('tr');
-    tr.className = "hover:bg-slate-50 transition-colors";
-
-    let catBadge = '';
-    if (r.category === 'conflict') {
-      catBadge = '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800">CONFLICT</span>';
-    } else if (r.category === 'answered') {
-      catBadge = '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">ANSWERED</span>';
-    } else {
-      catBadge = '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-200 text-slate-700">NOT COVERED</span>';
-    }
-
-    const statusPill = r.passed 
-      ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">PASS</span>'
-      : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-800">FAIL</span>';
-
-    tr.innerHTML = `
-      <td class="px-4 py-3 font-mono text-slate-400 font-semibold">${idx + 1}</td>
-      <td class="px-4 py-3">${catBadge}</td>
-      <td class="px-4 py-3">
-        <span class="font-semibold text-slate-800 block">${r.title}</span>
-        <span class="text-[11px] text-slate-500">${r.query}</span>
-      </td>
-      <td class="px-4 py-3 font-mono text-slate-600">${r.expected}</td>
-      <td class="px-4 py-3 font-mono font-bold ${r.actual === r.expected ? 'text-emerald-700' : 'text-red-700'}">${r.actual}</td>
-      <td class="px-4 py-3">${statusPill}</td>
-      <td class="px-4 py-3 text-right font-mono text-slate-500">${r.latency_ms} ms</td>
-    `;
-    tableBody.appendChild(tr);
-  });
 }
 
 // =========================================================================
@@ -805,7 +583,6 @@ async function searchHistory(keyword) {
       feed.innerHTML = `<div class="text-center py-6 text-slate-400 text-xs">No records matching "${keyword}"</div>`;
       return;
     }
-    // Render search results
     records.forEach(r => {
       const item = document.createElement('div');
       item.className = "bg-white p-3 rounded-xl border border-slate-200 text-xs space-y-1";

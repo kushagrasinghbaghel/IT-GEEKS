@@ -8,7 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -42,24 +42,24 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col antialiased selection:bg-medicaps-500 selection:text-white">
 
-  <!-- Top Announcement / Verification Bar -->
-  <div class="bg-gradient-to-r from-medicaps-900 via-medicaps-800 to-medicaps-700 text-white text-xs py-1.5 px-4">
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-medicaps-900 via-medicaps-800 to-medicaps-700 text-white text-xs py-1.5 px-4 shadow-sm">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
       <div class="flex items-center space-x-2">
         <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">
-          AUTONOMOUS CAMPUS REGULATIONS
+          AUTONOMOUS ACADEMIC REGULATIONS
         </span>
-        <span class="text-slate-300 hidden sm:inline">Medi-Caps University, Indore (M.P.) • Act No. 24 of 2015</span>
+        <span class="text-slate-300 hidden sm:inline">Medi-Caps University, Indore (M.P.) • Ordinance & Rulebook QA</span>
       </div>
-      <div class="flex items-center space-x-4 text-slate-300">
-        <span id="corpus-stats-badge" class="flex items-center gap-1.5">
-          <i class="fa-solid fa-book-open text-medicaps-gold text-xs"></i>
-          <span>Corpus: <strong class="text-white" id="stat-word-count">6,938</strong> words (5 docs + PDF)</span>
-        </span>
-        <span class="hidden md:inline text-slate-400">|</span>
+      <div class="flex items-center space-x-4 text-slate-300 text-[11px]">
         <span class="flex items-center gap-1.5">
-          <i class="fa-solid fa-triangle-exclamation text-amber-400 text-xs"></i>
-          <span>Planted Contradictions: <strong class="text-white">3</strong></span>
+          <i class="fa-solid fa-book-open text-medicaps-gold"></i>
+          <span>Corpus: <strong class="text-white font-mono">6,938</strong> words (5 docs + PDF)</span>
+        </span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="flex items-center gap-1.5">
+          <i class="fa-solid fa-scale-unbalanced text-amber-400"></i>
+          <span>Documented Contradictions: <strong class="text-white">3</strong></span>
         </span>
       </div>
     </div>
@@ -71,7 +71,7 @@
       <div class="flex items-center justify-between h-16">
         <!-- Logo & Branding -->
         <div class="flex items-center space-x-3 cursor-pointer" onclick="switchPage('qa')">
-          <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-medicaps-700 to-medicaps-900 flex items-center justify-center text-medicaps-gold shadow-md font-extrabold text-xl tracking-tighter border border-medicaps-gold/40">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-medicaps-700 to-medicaps-900 flex items-center justify-center text-medicaps-gold shadow-md font-extrabold text-xl tracking-tighter border border-medicaps-gold/40">
             MU
           </div>
           <div>
@@ -79,25 +79,18 @@
               <span class="font-extrabold text-base sm:text-lg text-medicaps-900 tracking-tight">MEDI-CAPS UNIVERSITY</span>
               <span class="hidden sm:inline-block px-2 py-0.5 text-[11px] font-semibold bg-medicaps-50 text-medicaps-700 rounded border border-medicaps-200">INDORE</span>
             </div>
-            <p class="text-xs text-slate-500 font-medium">Regulatory QA & Conflict Detection System</p>
+            <p class="text-xs text-slate-500 font-medium">Regulations QA & Conflict Detection System</p>
           </div>
         </div>
 
-        <!-- Navigation Tabs -->
-        <nav class="hidden md:flex items-center space-x-1">
+        <!-- Streamlined Navigation Tabs (3 Main Sections) -->
+        <nav class="hidden md:flex items-center space-x-2">
           <button onclick="switchPage('qa')" id="nav-qa" class="nav-btn active-nav">
-            <i class="fa-solid fa-magnifying-glass mr-1.5 text-xs"></i> Ask Regulations
+            <i class="fa-solid fa-magnifying-glass mr-1.5 text-xs text-blue-600"></i> Ask Regulations
           </button>
           <button onclick="switchPage('conflicts')" id="nav-conflicts" class="nav-btn">
             <i class="fa-solid fa-scale-unbalanced mr-1.5 text-xs text-amber-600"></i> Conflict Inspector
             <span class="ml-1.5 px-1.5 py-0.2 text-[10px] bg-amber-100 text-amber-800 rounded-full font-bold">3</span>
-          </button>
-          <button onclick="switchPage('corpus')" id="nav-corpus" class="nav-btn">
-            <i class="fa-solid fa-folder-open mr-1.5 text-xs text-blue-600"></i> Rulebook Explorer
-          </button>
-          <button onclick="switchPage('benchmark')" id="nav-benchmark" class="nav-btn">
-            <i class="fa-solid fa-flask-vial mr-1.5 text-xs text-purple-600"></i> Benchmark Suite
-            <span class="ml-1.5 px-1.5 py-0.2 text-[10px] bg-purple-100 text-purple-800 rounded-full font-bold">33</span>
           </button>
           <button onclick="switchPage('history')" id="nav-history" class="nav-btn">
             <i class="fa-solid fa-clock-rotate-left mr-1.5 text-xs text-slate-600"></i> History
@@ -119,7 +112,7 @@
             </button>
           </div>
 
-          <button id="login-nav-btn" onclick="openAuthModal()" class="inline-flex items-center text-xs font-semibold px-3 py-2 rounded-lg bg-medicaps-800 text-white hover:bg-medicaps-900 transition-all shadow-sm">
+          <button id="login-nav-btn" onclick="openAuthModal()" class="inline-flex items-center text-xs font-semibold px-3.5 py-2 rounded-xl bg-medicaps-800 text-white hover:bg-medicaps-900 transition-all shadow-sm">
             <i class="fa-solid fa-user-circle mr-1.5"></i> Sign In / Demo
           </button>
 
@@ -134,8 +127,6 @@
       <div id="mobile-menu" class="hidden md:hidden pb-3 pt-2 border-t border-slate-100 space-y-1 text-sm">
         <button onclick="switchPage('qa'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">🔍 Ask Regulations</button>
         <button onclick="switchPage('conflicts'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">⚖️ Conflict Inspector (3)</button>
-        <button onclick="switchPage('corpus'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">📚 Rulebook Explorer</button>
-        <button onclick="switchPage('benchmark'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">🧪 Benchmark Suite (33)</button>
         <button onclick="switchPage('history'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">📜 History Log</button>
       </div>
     </div>
@@ -148,32 +139,26 @@
     <!-- SECTION 1: ASK REGULATIONS (MAIN QA) -->
     <!-- ========================================================================= -->
     <section id="page-qa" class="page-view space-y-6">
-      <!-- Welcome Hero Banner -->
-      <div class="bg-gradient-to-r from-medicaps-900 via-medicaps-800 to-medicaps-700 rounded-2xl p-6 sm:p-8 text-white shadow-lg relative overflow-hidden">
-        <div class="relative z-10 max-w-3xl space-y-3">
-          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur border border-white/20 text-xs font-semibold text-medicaps-gold">
+      
+      <!-- Compact Hero Banner -->
+      <div class="bg-gradient-to-r from-medicaps-900 via-medicaps-800 to-medicaps-700 rounded-2xl p-6 text-white shadow-md relative overflow-hidden">
+        <div class="relative z-10 max-w-2xl space-y-2">
+          <div class="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-xs font-semibold text-medicaps-gold">
             <i class="fa-solid fa-shield-halved"></i>
             <span>Statutory Verification Engine</span>
           </div>
-          <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+          <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight">
             Academic Regulations & Conflict Engine
           </h1>
-          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Query across the official Medi-Caps University regulatory corpus. The system simultaneously cross-examines ordinances, hostel codes, and fee schedules, detects contradictions, and admits when rules are silent.
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Asks directly over official Medi-Caps regulations. Highlights exact clause numbers and similarity scores, clearly breaks down statutory contradictions, and admits when rules are silent.
           </p>
-        </div>
-        <!-- Decorative subtle emblem -->
-        <div class="absolute right-0 bottom-0 translate-x-8 translate-y-8 opacity-10 text-white text-9xl pointer-events-none font-bold">
-          MU
         </div>
       </div>
 
       <!-- Search Input Card -->
-      <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-slate-200/80 space-y-4">
+      <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-slate-200 space-y-4">
         <form id="ask-form" onsubmit="handleAskSubmit(event)" class="space-y-3">
-          <label for="query-input" class="block text-xs font-bold uppercase tracking-wider text-slate-600">
-            Ask a regulatory question
-          </label>
           <div class="flex flex-col sm:flex-row gap-2">
             <div class="relative flex-1">
               <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -193,7 +178,7 @@
               class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-medicaps-700 hover:bg-medicaps-800 text-white font-semibold text-sm transition-all shadow-sm active:scale-95 disabled:opacity-50"
             >
               <i class="fa-solid fa-paper-plane mr-2 text-xs"></i>
-              <span id="ask-btn-text">Consult Rulebook</span>
+              <span id="ask-btn-text">Search Rules</span>
             </button>
           </div>
         </form>
@@ -202,9 +187,9 @@
         <div class="space-y-2 pt-2 border-t border-slate-100">
           <div class="flex items-center justify-between">
             <span class="text-xs font-semibold text-slate-500">Quick Test Scenarios:</span>
-            <span class="text-[11px] text-slate-400">Click any chip to test pipeline</span>
+            <span class="text-[11px] text-slate-400">Click to run immediately</span>
           </div>
-          <div class="flex flex-wrap gap-1.5">
+          <div class="flex flex-wrap gap-2">
             <!-- Conflict 1 -->
             <button onclick="setQueryAndSubmit('Can attendance between 65% and 75% be condoned by paying a fee without medical certificate?')" class="chip chip-conflict">
               <i class="fa-solid fa-scale-unbalanced text-[11px] mr-1"></i> Conflict 1: Exam Attendance
@@ -221,143 +206,158 @@
             <button onclick="setQueryAndSubmit('What is the minimum CGPA required to graduate with First Class with Distinction?')" class="chip chip-answered">
               <i class="fa-solid fa-circle-check text-[11px] mr-1"></i> Distinction CGPA
             </button>
-            <button onclick="setQueryAndSubmit('What are the eligibility criteria and minimum CGPA for B.Tech branch change after first year?')" class="chip chip-answered">
-              <i class="fa-solid fa-circle-check text-[11px] mr-1"></i> Branch Change
-            </button>
             <!-- Unanswerable -->
             <button onclick="setQueryAndSubmit('What happens if I miss the End-Semester Examination because of my sister\'s wedding?')" class="chip chip-unanswerable">
               <i class="fa-solid fa-circle-question text-[11px] mr-1"></i> Unanswerable: Wedding Absence
-            </button>
-            <button onclick="setQueryAndSubmit('Can I bring my personal electric scooter and charge it in my hostel room?')" class="chip chip-unanswerable">
-              <i class="fa-solid fa-circle-question text-[11px] mr-1"></i> Unanswerable: EV Scooter
             </button>
           </div>
         </div>
       </div>
 
       <!-- Loading State Spinner -->
-      <div id="qa-loading" class="hidden py-12 text-center space-y-3">
-        <div class="inline-block animate-spin rounded-full h-10 w-10 border-4 border-medicaps-200 border-t-medicaps-700"></div>
-        <p class="text-sm font-semibold text-slate-600">Cross-referencing Academic Regulations, Examination Ordinance No. 14, and Fee Schedules...</p>
-        <p class="text-xs text-slate-400 font-mono">Computing TF-IDF cosine similarity & evaluating contradiction graph</p>
+      <div id="qa-loading" class="hidden py-10 text-center space-y-2">
+        <div class="inline-block animate-spin rounded-full h-9 w-9 border-4 border-medicaps-200 border-t-medicaps-700"></div>
+        <p class="text-sm font-semibold text-slate-700">Checking regulations, ordinance, and fee schedules...</p>
       </div>
 
-      <!-- RESPONSE VIEWPORT: SIDE-BY-SIDE PRESENTATION (Left: Answer/Conflict, Right: Passages) -->
+      <!-- RESPONSE VIEWPORT: SIDE-BY-SIDE PRESENTATION -->
       <div id="qa-response-container" class="hidden space-y-4">
         
         <!-- Response Header Bar -->
-        <div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-wrap items-center justify-between gap-3">
+        <div class="bg-white rounded-xl p-3 sm:p-4 border border-slate-200 shadow-sm flex flex-wrap items-center justify-between gap-3">
           <div class="flex items-center space-x-3">
             <span id="verdict-pill" class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase shadow-sm">
               <!-- Rendered via JS -->
             </span>
             <span class="text-xs text-slate-500 font-mono" id="response-latency-badge">
-              <i class="fa-regular fa-clock mr-1"></i> 8.4 ms
+              <i class="fa-regular fa-clock mr-1"></i> 6.5 ms
             </span>
           </div>
-          <div class="text-xs text-slate-400">
-            Query: <span class="font-medium text-slate-700" id="response-query-echo"></span>
+          <div class="text-xs text-slate-500 max-w-md truncate">
+            Query: <strong class="text-slate-800" id="response-query-echo"></strong>
           </div>
         </div>
 
         <!-- 2-Column Side-by-Side Layout -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           
-          <!-- LEFT COLUMN (7 Cols): Answer / Conflict Breakdown Card -->
+          <!-- LEFT COLUMN (7 Cols): Answer / Ultra-Readable Conflict Card -->
           <div class="lg:col-span-7 space-y-4">
             
-            <!-- Answer Card -->
-            <div id="answer-card" class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
-              <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-                <h2 class="text-sm font-bold uppercase tracking-wider text-slate-700 flex items-center">
-                  <i class="fa-solid fa-graduation-cap text-medicaps-700 mr-2"></i> Official Regulatory Determination
+            <!-- LIMITED, CONCISE ANSWER CARD -->
+            <div id="answer-card" class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center">
+                  <i class="fa-solid fa-graduation-cap text-medicaps-700 mr-2"></i> Official Regulatory Answer
                 </h2>
                 <button onclick="copyAnswerToClipboard()" class="text-xs text-slate-400 hover:text-slate-600 flex items-center gap-1" title="Copy answer">
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
               </div>
               
-              <!-- Markdown synthesized answer text -->
-              <div id="answer-content" class="text-slate-700 leading-relaxed text-sm space-y-3 prose prose-sm max-w-none">
+              <!-- Limited, crisp synthesized text -->
+              <div id="answer-content" class="text-slate-700 leading-relaxed text-sm">
                 <!-- Rendered dynamically -->
               </div>
             </div>
 
-            <!-- SPECIAL CONFLICT INSPECTION CARD (Visible only on conflict verdict) -->
-            <div id="conflict-card" class="hidden bg-amber-50/70 border border-amber-300/80 rounded-2xl p-6 shadow-sm space-y-4">
-              <div class="flex items-center space-x-2 text-amber-900 border-b border-amber-200/80 pb-3">
-                <i class="fa-solid fa-scale-unbalanced text-lg text-amber-600"></i>
-                <div>
-                  <h3 class="font-bold text-sm" id="conflict-card-title">Direct Regulatory Contradiction</h3>
-                  <p class="text-xs text-amber-700" id="conflict-card-desc">Two statutory documents enforce incompatible provisions.</p>
-                </div>
-              </div>
-
-              <!-- Side-by-side Dual Clause Comparison -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
-                <!-- Clause A Box -->
-                <div class="bg-white rounded-xl p-4 border border-amber-200 shadow-sm space-y-2">
-                  <div class="flex items-center justify-between">
-                    <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-800 uppercase" id="clause-a-badge">
-                      Clause A
-                    </span>
-                    <span class="text-[11px] font-mono text-slate-500 font-semibold" id="clause-a-sim">
-                      92% Match
-                    </span>
+            <!-- ULTRA-READABLE CONFLICT INSPECTION CARD (Visible on conflict) -->
+            <div id="conflict-card" class="hidden bg-gradient-to-b from-amber-50/80 to-white border-2 border-amber-300/90 rounded-2xl p-5 sm:p-6 shadow-sm space-y-5">
+              
+              <!-- Conflict Banner Header -->
+              <div class="flex items-start justify-between border-b border-amber-200/80 pb-3">
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">
+                    <i class="fa-solid fa-scale-unbalanced"></i>
                   </div>
-                  <h4 class="font-bold text-xs text-slate-800" id="clause-a-ref">Academic Regulations § 4.2</h4>
-                  <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-100 italic" id="clause-a-excerpt">
-                    "Every registered student must achieve a minimum attendance of 75%..."
-                  </p>
-                  <div class="text-[11px] text-blue-900 font-medium bg-blue-50/80 p-2 rounded border border-blue-200" id="clause-a-threshold">
-                    Strict 75% Non-waivable
-                  </div>
-                </div>
-
-                <!-- Clause B Box -->
-                <div class="bg-white rounded-xl p-4 border border-amber-200 shadow-sm space-y-2">
-                  <div class="flex items-center justify-between">
-                    <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-purple-100 text-purple-800 uppercase" id="clause-b-badge">
-                      Clause B
+                  <div>
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-200 text-amber-900">
+                      Direct Statutory Contradiction
                     </span>
-                    <span class="text-[11px] font-mono text-slate-500 font-semibold" id="clause-b-sim">
-                      88% Match
-                    </span>
-                  </div>
-                  <h4 class="font-bold text-xs text-slate-800" id="clause-b-ref">Ordinance No. 14 § 8.1</h4>
-                  <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-100 italic" id="clause-b-excerpt">
-                    "The Dean of Academic Affairs is vested with statutory authority to condone attendance between 65.0% and 74.9%..."
-                  </p>
-                  <div class="text-[11px] text-purple-900 font-medium bg-purple-50/80 p-2 rounded border border-purple-200" id="clause-b-threshold">
-                    65% - 74.9% Condoned on Fee
+                    <h3 class="font-extrabold text-base text-slate-900 mt-0.5" id="conflict-card-title">
+                      Conflict Title
+                    </h3>
                   </div>
                 </div>
               </div>
 
-              <!-- Comparative Discrepancy Breakdown -->
-              <div class="bg-amber-100/60 rounded-xl p-3 border border-amber-200 text-xs text-amber-900 space-y-1">
-                <span class="font-bold block">Why is this a direct contradiction?</span>
-                <p id="conflict-analysis-text">
-                  Analysis goes here...
+              <!-- HIGH READABILITY: DUAL CLAUSE COMPARISON (Clause A vs Clause B) -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
+                
+                <!-- CLAUSE A (Blue/Indigo Theme) -->
+                <div class="bg-white rounded-xl p-4 border-2 border-blue-200 shadow-sm space-y-3 relative flex flex-col justify-between">
+                  <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                      <span class="px-2.5 py-0.5 rounded-md text-[10px] font-extrabold bg-blue-700 text-white uppercase tracking-wider">
+                        Document A
+                      </span>
+                      <span class="text-[11px] font-mono font-bold text-blue-700" id="clause-a-sim">
+                        92% Match
+                      </span>
+                    </div>
+                    <div class="font-bold text-xs text-slate-900" id="clause-a-ref">Academic Regulations § 4.2</div>
+                    <div class="text-[11px] font-semibold text-blue-900 bg-blue-50 px-2.5 py-1.5 rounded-lg border border-blue-200" id="clause-a-threshold">
+                      Strict 75% Mandatory
+                    </div>
+                  </div>
+
+                  <blockquote class="text-xs text-slate-600 bg-slate-50/80 p-3 rounded-lg border-l-4 border-blue-600 italic font-serif leading-relaxed" id="clause-a-excerpt">
+                    "Clause A quote..."
+                  </blockquote>
+                </div>
+
+                <!-- CLAUSE B (Rose/Crimson Theme) -->
+                <div class="bg-white rounded-xl p-4 border-2 border-rose-200 shadow-sm space-y-3 relative flex flex-col justify-between">
+                  <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                      <span class="px-2.5 py-0.5 rounded-md text-[10px] font-extrabold bg-rose-700 text-white uppercase tracking-wider">
+                        Document B
+                      </span>
+                      <span class="text-[11px] font-mono font-bold text-rose-700" id="clause-b-sim">
+                        88% Match
+                      </span>
+                    </div>
+                    <div class="font-bold text-xs text-slate-900" id="clause-b-ref">Ordinance No. 14 § 8.1</div>
+                    <div class="text-[11px] font-semibold text-rose-900 bg-rose-50 px-2.5 py-1.5 rounded-lg border border-rose-200" id="clause-b-threshold">
+                      65% - 74.9% Condoned on Fee
+                    </div>
+                  </div>
+
+                  <blockquote class="text-xs text-slate-600 bg-slate-50/80 p-3 rounded-lg border-l-4 border-rose-600 italic font-serif leading-relaxed" id="clause-b-excerpt">
+                    "Clause B quote..."
+                  </blockquote>
+                </div>
+
+              </div>
+
+              <!-- Plain-English Breakdown -->
+              <div class="bg-white rounded-xl p-4 border border-amber-200/80 shadow-xs space-y-1.5 text-xs">
+                <div class="font-extrabold text-slate-900 flex items-center gap-1.5 text-xs">
+                  <i class="fa-solid fa-circle-question text-amber-600"></i> The Core Conflict:
+                </div>
+                <p class="text-slate-700 leading-relaxed" id="conflict-analysis-text">
+                  Analysis of why these rules clash...
                 </p>
               </div>
 
-              <!-- Recommendation Notice -->
-              <div class="text-[11px] text-slate-600 flex items-start gap-2 bg-white/80 p-3 rounded-xl border border-slate-200">
-                <i class="fa-solid fa-building-columns text-slate-500 mt-0.5"></i>
-                <span id="conflict-action-text">
-                  Administrative guidance for students...
-                </span>
+              <!-- Recommendation Note -->
+              <div class="bg-amber-100/50 rounded-xl p-3 border border-amber-200 text-xs text-amber-900 flex items-start gap-2">
+                <i class="fa-solid fa-triangle-exclamation text-amber-600 mt-0.5"></i>
+                <div>
+                  <strong>Student Advisory:</strong>
+                  <span id="conflict-action-text" class="text-amber-800">Please contact the Academic Registrar before taking action based on either clause.</span>
+                </div>
               </div>
+
             </div>
 
-            <!-- NOT COVERED EXPLANATION CARD (Visible only on not_covered verdict) -->
-            <div id="unanswerable-card" class="hidden bg-slate-100/80 border border-slate-300/80 rounded-2xl p-5 shadow-sm space-y-3">
+            <!-- NOT COVERED EXPLANATION CARD (Visible on not_covered) -->
+            <div id="unanswerable-card" class="hidden bg-slate-100 border border-slate-300 rounded-2xl p-5 shadow-sm space-y-3">
               <div class="flex items-center space-x-2 text-slate-800">
-                <i class="fa-solid fa-circle-exclamation text-slate-500 text-lg"></i>
-                <h3 class="font-bold text-sm">Regulatory Scope Silence</h3>
+                <i class="fa-solid fa-circle-minus text-slate-500 text-lg"></i>
+                <h3 class="font-bold text-xs uppercase tracking-wider text-slate-600">Regulatory Silence</h3>
               </div>
-              <p class="text-xs text-slate-600 leading-relaxed" id="unanswerable-reason-text">
+              <p class="text-xs text-slate-700 leading-relaxed font-medium" id="unanswerable-reason-text">
                 The Medi-Caps University handbook is silent on this specific query.
               </p>
               <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs space-y-1">
@@ -370,13 +370,13 @@
 
           </div>
 
-          <!-- RIGHT COLUMN (5 Cols): CITED REGULATORY PASSAGES (Side-by-side) -->
+          <!-- RIGHT COLUMN (5 Cols): HIGHLY READABLE CITED PASSAGES (Side-by-Side) -->
           <div class="lg:col-span-5 space-y-4">
-            <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4">
-              <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
                 <div class="flex items-center space-x-2">
                   <h3 class="text-xs font-bold uppercase tracking-wider text-slate-700">
-                    Cited Regulatory Passages
+                    Cited Clauses & Passages
                   </h3>
                   <span id="citations-count-badge" class="px-2 py-0.5 text-[10px] font-bold bg-slate-100 text-slate-700 rounded-full">
                     0
@@ -387,21 +387,15 @@
 
               <!-- Passages List Container -->
               <div id="citations-list" class="space-y-3">
-                <!-- Rendered dynamically -->
+                <!-- Rendered dynamically via JS with crisp readability -->
               </div>
             </div>
 
-            <!-- Corpus Authority Verification Footer Card -->
-            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/80 text-xs text-slate-500 space-y-2">
-              <div class="flex items-center justify-between">
-                <span class="font-semibold text-slate-700 flex items-center gap-1.5">
-                  <i class="fa-solid fa-stamp text-medicaps-700"></i> Statutory Indexing
-                </span>
-                <span class="font-mono text-[10px]">TF-IDF + Cosine</span>
-              </div>
-              <p class="text-[11px] leading-relaxed">
-                Retrieved clauses cite exact section numbers and similarity scores from the active 2024-2025 regulatory repository.
-              </p>
+            <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200/80 text-[11px] text-slate-500 flex items-center justify-between">
+              <span class="font-medium text-slate-700">
+                <i class="fa-solid fa-certificate text-medicaps-700 mr-1"></i> Official Medi-Caps 2024-25 Corpus
+              </span>
+              <span class="font-mono text-slate-400">TF-IDF Normalized</span>
             </div>
           </div>
 
@@ -439,145 +433,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- SECTION 3: RULEBOOK CORPUS EXPLORER -->
-    <!-- ========================================================================= -->
-    <section id="page-corpus" class="page-view hidden space-y-6">
-      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
-          <div>
-            <div class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold bg-blue-100 text-blue-800">
-              <i class="fa-solid fa-book-bookmark mr-1.5"></i> Corpus Architecture
-            </div>
-            <h2 class="text-2xl font-extrabold text-slate-900 mt-2">
-              Medi-Caps University Rulebook Explorer
-            </h2>
-            <p class="text-slate-600 text-sm mt-1">
-              Inspect the raw text, structure, and word counts of all regulatory documents in the corpus.
-            </p>
-          </div>
-          <div class="text-right">
-            <span class="text-xs text-slate-400 block font-mono">TOTAL CORPUS WORDS</span>
-            <span class="text-2xl font-extrabold text-medicaps-700 font-mono" id="explorer-total-words">6,938</span>
-            <span class="text-[11px] text-emerald-600 font-semibold block">✓ Exceeds 6,000 words requirement</span>
-          </div>
-        </div>
-
-        <!-- Document Selector Tabs -->
-        <div class="flex flex-wrap gap-2 border-b border-slate-200 pb-3" id="doc-tabs-container">
-          <!-- Document buttons loaded via JS -->
-        </div>
-
-        <!-- Document Metadata Header -->
-        <div id="doc-meta-bar" class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs">
-          <div class="flex items-center space-x-2">
-            <span class="font-bold text-slate-800" id="current-doc-name">Loading...</span>
-            <span class="px-2 py-0.5 rounded text-[10px] font-semibold uppercase" id="current-doc-format-badge">Markdown</span>
-          </div>
-          <div class="flex items-center space-x-4 text-slate-600 font-mono">
-            <span>Words: <strong id="current-doc-words" class="text-slate-800">0</strong></span>
-            <span>Chunks: <strong id="current-doc-chunks" class="text-slate-800">0</strong></span>
-            <a id="current-doc-download-link" href="#" target="_blank" class="hidden text-medicaps-700 hover:underline font-sans font-semibold">
-              <i class="fa-solid fa-file-pdf mr-1"></i> View Raw PDF
-            </a>
-          </div>
-        </div>
-
-        <!-- Document Content Viewer -->
-        <div class="relative bg-slate-900 text-slate-100 rounded-xl p-6 font-mono text-xs overflow-x-auto max-h-[600px] border border-slate-800">
-          <pre id="doc-content-viewer" class="whitespace-pre-wrap leading-relaxed">Loading document text...</pre>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- SECTION 4: BENCHMARK SUITE (AUTOMATED TEST RUNNER) -->
-    <!-- ========================================================================= -->
-    <section id="page-benchmark" class="page-view hidden space-y-6">
-      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
-          <div>
-            <div class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold bg-purple-100 text-purple-800">
-              <i class="fa-solid fa-flask-vial mr-1.5"></i> Automated Test Suite
-            </div>
-            <h2 class="text-2xl font-extrabold text-slate-900 mt-2">
-              System Benchmark Evaluator
-            </h2>
-            <p class="text-slate-600 text-sm mt-1">
-              Executes all 33 evaluation test cases: 3 Planted Contradictions, 5 Standard Answerable Queries, and the 25 Hard Unanswerable Questions.
-            </p>
-          </div>
-          <button
-            onclick="runBenchmarkSuite()"
-            id="run-benchmark-btn"
-            class="inline-flex items-center px-6 py-3 rounded-xl bg-purple-700 hover:bg-purple-800 text-white font-semibold text-sm transition-all shadow-sm active:scale-95"
-          >
-            <i class="fa-solid fa-play mr-2 text-xs"></i>
-            <span>Run Complete Benchmark</span>
-          </button>
-        </div>
-
-        <!-- Live Scorecards -->
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
-            <span class="text-xs text-slate-500 font-semibold block">TOTAL TESTS</span>
-            <span class="text-2xl font-extrabold text-slate-800 font-mono" id="bench-total-count">33</span>
-            <span class="text-[11px] text-slate-400 block mt-0.5">3 Conf + 5 Ans + 25 NotCov</span>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
-            <span class="text-xs text-slate-500 font-semibold block">OVERALL ACCURACY</span>
-            <span class="text-2xl font-extrabold text-emerald-600 font-mono" id="bench-accuracy">100.0%</span>
-            <span class="text-[11px] text-emerald-600 font-semibold block mt-0.5">33 of 33 Passing</span>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
-            <span class="text-xs text-slate-500 font-semibold block">CONTRADICTIONS</span>
-            <span class="text-2xl font-extrabold text-amber-600 font-mono" id="bench-conflicts">3 / 3</span>
-            <span class="text-[11px] text-slate-500 block mt-0.5">100% Conflict Precision</span>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
-            <span class="text-xs text-slate-500 font-semibold block">AVG LATENCY</span>
-            <span class="text-2xl font-extrabold text-purple-600 font-mono" id="bench-latency">6.5 ms</span>
-            <span class="text-[11px] text-slate-500 block mt-0.5">Real-time Response</span>
-          </div>
-        </div>
-
-        <!-- Filter and Search in Benchmark Results -->
-        <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
-          <div class="flex items-center space-x-2">
-            <span class="text-xs font-bold text-slate-600">Filter:</span>
-            <button onclick="filterBenchmark('all')" class="bench-filter-btn active" id="bf-all">All (33)</button>
-            <button onclick="filterBenchmark('conflict')" class="bench-filter-btn" id="bf-conflict">Conflicts (3)</button>
-            <button onclick="filterBenchmark('answered')" class="bench-filter-btn" id="bf-answered">Answered (5)</button>
-            <button onclick="filterBenchmark('not_covered')" class="bench-filter-btn" id="bf-not_covered">Unanswerable (25)</button>
-          </div>
-          <div id="benchmark-status-badge" class="text-xs text-slate-500">
-            Click "Run Complete Benchmark" to re-evaluate
-          </div>
-        </div>
-
-        <!-- Benchmark Test Results Table -->
-        <div class="overflow-x-auto rounded-xl border border-slate-200">
-          <table class="min-w-full divide-y divide-slate-200 text-xs">
-            <thead class="bg-slate-50">
-              <tr>
-                <th class="px-4 py-3 text-left font-bold text-slate-600 uppercase">#</th>
-                <th class="px-4 py-3 text-left font-bold text-slate-600 uppercase">Category</th>
-                <th class="px-4 py-3 text-left font-bold text-slate-600 uppercase">Query / Title</th>
-                <th class="px-4 py-3 text-left font-bold text-slate-600 uppercase">Expected</th>
-                <th class="px-4 py-3 text-left font-bold text-slate-600 uppercase">Actual</th>
-                <th class="px-4 py-3 text-left font-bold text-slate-600 uppercase">Status</th>
-                <th class="px-4 py-3 text-right font-bold text-slate-600 uppercase">Latency</th>
-              </tr>
-            </thead>
-            <tbody id="benchmark-table-body" class="bg-white divide-y divide-slate-100">
-              <!-- Rendered via JS -->
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- SECTION 5: HISTORY & AUDIT LOG -->
+    <!-- SECTION 3: HISTORY & AUDIT LOG -->
     <!-- ========================================================================= -->
     <section id="page-history" class="page-view hidden space-y-6">
       <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-6">
@@ -711,12 +567,10 @@
       <div class="flex items-center justify-center space-x-3 text-slate-600 font-medium">
         <span>Medi-Caps University, Indore</span>
         <span>•</span>
-        <span>Faculty of Engineering & Technology</span>
-        <span>•</span>
         <span>Academic Autonomous Regulations (2024-2025)</span>
       </div>
       <p class="text-slate-400">
-        Engineered with FastAPI, Hybrid TF-IDF/BM25 Semantic Retrieval & Multi-Document Contradiction Detector.
+        Engineered with FastAPI & Hybrid TF-IDF/BM25 Statutory Contradiction Engine.
       </p>
     </div>
   </footer>

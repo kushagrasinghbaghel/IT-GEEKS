@@ -1,33 +1,50 @@
 [
   {
-    "id": "rec_1788810087439",
-    "timestamp": "2026-09-08 01:11:27",
-    "epoch": 1788810087.4395456,
+    "id": "rec_1788847645329",
+    "timestamp": "2026-09-08 11:37:25",
+    "epoch": 1788847645.3294537,
+    "user_email": "guest@medicaps.ac.in",
+    "query": "What is the minimum CGPA required to graduate with First Class with Distinction?",
+    "verdict": "answered",
+    "answer_preview": "**Academic Regulations \u00a7 10.1** (\u00a7 10.1 First Class with Distinction and Dean's List) stipulates:\n\n> \"A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entire dura...",
+    "full_answer": "**Academic Regulations \u00a7 10.1** (\u00a7 10.1 First Class with Distinction and Dean's List) stipulates:\n\n> \"A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entire duration of the programme, shall be declared to have passed in **\"First Class with Distinction\"**.\"\n\nAdditionally: **Dean\u2019s Merit List:** Students securing an SGPA of 9.00 and above in any semester with zero backlog courses are placed on the \"Dean\u2019s Academic Merit Honor Roll\" and awarded a formal commendation certificate at the Annual Convocation ceremony.",
+    "latency_ms": 4.09,
+    "citations_count": 2,
+    "citations_summary": [
+      "Academic Regulations \u00a7 10.1",
+      "Scholarship Policy \u00a7 5.1"
+    ],
+    "conflict_detected": false,
+    "conflict_title": null
+  },
+  {
+    "id": "rec_1788847645318",
+    "timestamp": "2026-09-08 11:37:25",
+    "epoch": 1788847645.318641,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can attendance between 65% and 75% be condoned by paying a fee?",
     "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 4.2 (medicaps_academic_regulations_2024.md)** prescribes: \"S...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 4.2 (medicaps_academic_regulations_2024.md)** prescribes: \"Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted.\"\n\n\u2022 **Ordinance No. 14 \u00a7 8.1 (medicaps_ordinance_14_exam_conduct.pdf)** stipulates: \"65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate.\"\n\n**Comparative Discrepancy:** Academic Regulations \u00a7 4.2 establishes a strict, non-waivable 75% rule (floor 70% exclusively for certified medical emergencies) and expressly bans monetary condonation. Conversely, Ordinance No. 14 \u00a7 8.1 grants the Dean of Academic Affairs statutory power to condone attendance down to 65% on payment of a Rs. 1,500 fee without medical records. These two statutory instruments directly contradict each other.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
-    "latency_ms": 9.93,
-    "citations_count": 3,
+    "answer_preview": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or admi...",
+    "full_answer": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted.\n\u2022 **Ordinance No. 14 \u00a7 8.1**: 65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate.\n\nNeither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below.",
+    "latency_ms": 9.39,
+    "citations_count": 2,
     "citations_summary": [
       "Academic Regulations \u00a7 4.2",
-      "Ordinance No. 14 \u00a7 8.1",
-      "Hostel Code of Conduct \u00a7 3.2"
+      "Ordinance No. 14 \u00a7 8.1"
     ],
     "conflict_detected": true,
     "conflict_title": "Attendance Requirement & Condonation for End-Semester Examinations"
   },
   {
-    "id": "rec_1788809802523",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.5232055,
+    "id": "rec_1788847595963",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.963783,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can students install their own personal window air conditioners or portable coolers in hostel rooms by paying an extra electricity meter deposit?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a74.1 bans induction cookers, heaters, and irons, and Fee Schedule lists Air...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a74.1 bans induction cookers, heaters, and irons, and Fee Schedule lists Air-Cooled rooms, but personal tenant AC installation or sub-metering is unaddressed.\n\n\u2022 **Nearest Adjacent Regulation:** Prohibited electrical appliances (heaters, kettles, mini-fridges) and room tiers\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 5.16,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a74.1 bans induction cookers, heaters, and irons, and Fee Schedule lists Air-Cooled rooms, but personal tenant A...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a74.1 bans induction cookers, heaters, and irons, and Fee Schedule lists Air-Cooled rooms, but personal tenant AC installation or sub-metering is unaddressed.\n\n*Nearest Codified Provision:* Prohibited electrical appliances (heaters, kettles, mini-fridges) and room tiers",
+    "latency_ms": 5.56,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 4.1",
@@ -37,15 +54,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809802509",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.5090816,
+    "id": "rec_1788847595952",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.9526606,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can international or NRI students pay university tuition fees using cryptocurrency or Bitcoin?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a71.1 specifies Net Banking, UPI, Debit/Credit card, and Bank Challan,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a71.1 specifies Net Banking, UPI, Debit/Credit card, and Bank Challan, but crypto assets or foreign digital currency escrow are not explicitly addressed.\n\n\u2022 **Nearest Adjacent Regulation:** Fee payment modes (ERP Gateway, Net Banking, UPI, Challan)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.1,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Fee Schedule \u00a71.1 specifies Net Banking, UPI, Debit/Credit card, and Bank Challan, but crypto assets or foreign digita...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Fee Schedule \u00a71.1 specifies Net Banking, UPI, Debit/Credit card, and Bank Challan, but crypto assets or foreign digital currency escrow are not explicitly addressed.\n\n*Nearest Codified Provision:* Fee payment modes (ERP Gateway, Net Banking, UPI, Challan)",
+    "latency_ms": 2.99,
     "citations_count": 2,
     "citations_summary": [
       "Fee Deadlines Schedule Section Overview",
@@ -55,15 +72,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809802497",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.497262,
+    "id": "rec_1788847595943",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.943586,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can a student wear religious headgear or turbans during mechanical engineering workshop lathe machine operations?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Workshop practicals are required under \u00a72.1, but specific safety dress codes, prot...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Workshop practicals are required under \u00a72.1, but specific safety dress codes, protective headgear waivers, or lathe attire rules are absent.\n\n\u2022 **Nearest Adjacent Regulation:** Curricular laboratory credits and campus discipline\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.13,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Workshop practicals are required under \u00a72.1, but specific safety dress codes, protective headgear waivers, or lathe at...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Workshop practicals are required under \u00a72.1, but specific safety dress codes, protective headgear waivers, or lathe attire rules are absent.\n\n*Nearest Codified Provision:* Curricular laboratory credits and campus discipline",
+    "latency_ms": 3.27,
     "citations_count": 2,
     "citations_summary": [
       "Academic Regulations \u00a7 2.1",
@@ -73,15 +90,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809802485",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.4857547,
+    "id": "rec_1788847595934",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.9343536,
     "user_email": "guest@medicaps.ac.in",
     "query": "What is the procedure if a professor consistently arrives 20 minutes late to classroom lectures?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a74.1 outlines hourly student attendance tracking, but faculty punctua...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a74.1 outlines hourly student attendance tracking, but faculty punctuality grievances or teacher delay reporting channels are not covered.\n\n\u2022 **Nearest Adjacent Regulation:** Attendance calculation framework and contact hours delivered\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.1,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a74.1 outlines hourly student attendance tracking, but faculty punctuality grievances or teacher delay rep...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a74.1 outlines hourly student attendance tracking, but faculty punctuality grievances or teacher delay reporting channels are not covered.\n\n*Nearest Codified Provision:* Attendance calculation framework and contact hours delivered",
+    "latency_ms": 3.63,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 7.1",
@@ -91,1067 +108,17 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809802473",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.4738314,
+    "id": "rec_1788847595923",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.9237502,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can a day-scholar student access the campus gymnasium before 8:00 AM without paying an annual sports subscription?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for d...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for day-scholar peer guest stays during examination weeks.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel room occupancy and summer break per-day charges\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.12,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 2.1",
-      "Scholarship Policy \u00a7 3.3"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802462",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.4626555,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Is recreational drone flying allowed on the university sports ground on Sundays for student YouTube channels?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a73 covers athletic tournaments and grounds, but airspace restrictions, dron...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a73 covers athletic tournaments and grounds, but airspace restrictions, drone permits, and recreational videography rules are unstated.\n\n\u2022 **Nearest Adjacent Regulation:** Sports ground usage and campus code of conduct\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.1,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 3.1",
-      "Hostel Code of Conduct \u00a7 3.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802451",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.4514885,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can a student dispute a Turnitin plagiarism report if the software flags their own previously published IEEE conference paper?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Scholarship \u00a75.2 covers PhD review and Ordinance 14 covers exam malpractice, but s...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Scholarship \u00a75.2 covers PhD review and Ordinance 14 covers exam malpractice, but self-plagiarism or preprint exclusion thresholds in Turnitin are absent.\n\n\u2022 **Nearest Adjacent Regulation:** Doctoral research committee progress and unfair means penalties\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.18,
-    "citations_count": 2,
-    "citations_summary": [
-      "Ordinance No. 14 \u00a7 1.1",
-      "Ordinance No. 14 \u00a7 3.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802440",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.4401941,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can a student request vegan, keto, or gluten-free meals on medical advice in the university hostel mess?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a75.1 establishes standard dining schedules and food tray rules, but dietary...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a75.1 establishes standard dining schedules and food tray rules, but dietary customization or specialized allergen meals are not addressed.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel mess schedule and meal rebate of Rs. 120/day\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.02,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 5.2",
-      "Hostel Code of Conduct \u00a7 3.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802428",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.4287622,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Is there any daily stipend or honorarium provided by the university for student volunteers in the annual cultural fest Moonstone?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Scholarship \u00a75.1 covers Rs. 8,000 GTA for PG students and Reg \u00a74.3 covers Duty Lea...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Scholarship \u00a75.1 covers Rs. 8,000 GTA for PG students and Reg \u00a74.3 covers Duty Leave, but cultural fest volunteer honorariums are not defined.\n\n\u2022 **Nearest Adjacent Regulation:** Student representation duty leave and graduate teaching assistantships\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 3.1",
-      "Fee Deadlines Schedule \u00a7 2.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802417",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.418423,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What percentage of the university bus transport fee is refunded if I cancel my bus pass midway through the semester?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a72.2 lists annual transport slabs (Rs. 20,000-28,000) and notes passe...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a72.2 lists annual transport slabs (Rs. 20,000-28,000) and notes passes are non-transferable, but sets no mid-term partial refund formula for transit.\n\n\u2022 **Nearest Adjacent Regulation:** University Bus Transportation Fee slabs and general tuition refund\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.33,
-    "citations_count": 2,
-    "citations_summary": [
-      "Fee Deadlines Schedule \u00a7 2.2",
-      "Fee Schedule Tabular \u00a7 Transport"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802403",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.403663,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can male and female students collaborate together on group projects in the 24/7 central library study cubicles after 8:00 PM?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel timings are 9:00 PM / 9:30 PM, but internal gender segregation or co-ed col...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel timings are 9:00 PM / 9:30 PM, but internal gender segregation or co-ed collaboration guidelines inside central library after 8 PM are not stated.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel gate timings and campus code of conduct\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.83,
-    "citations_count": 2,
-    "citations_summary": [
-      "Scholarship Policy \u00a7 3.3",
-      "Hostel Code of Conduct \u00a7 5.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802388",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.388821,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I submit my handwritten laboratory assignments digitally on an iPad using Apple Pencil instead of a paper practical file?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a75.1 and \u00a76.3 specify 50% pass criteria in lab evaluations, but mediu...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a75.1 and \u00a76.3 specify 50% pass criteria in lab evaluations, but medium of submission (digital stylus tablet vs bound hardcopy file) is not prescribed.\n\n\u2022 **Nearest Adjacent Regulation:** Continuous Internal Assessment (CIA) laboratory evaluation\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.57,
-    "citations_count": 2,
-    "citations_summary": [
-      "Ordinance No. 14 \u00a7 1.1",
-      "Academic Regulations \u00a7 1.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802372",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.3722246,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I take a one-year gap year or semester sabbatical after my second year to pursue an unpaid government fellowship?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a77.2 specifies the 6-year maximum duration for completion, but does n...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a77.2 specifies the 6-year maximum duration for completion, but does not provide formal criteria for taking voluntary gap years or sabbatical breaks.\n\n\u2022 **Nearest Adjacent Regulation:** Maximum duration for degree completion (N+2 rule: 6 years for B.Tech)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.28,
-    "citations_count": 2,
-    "citations_summary": [
-      "Scholarship Policy \u00a7 5.2",
-      "Academic Regulations \u00a7 8.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802356",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.356997,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Is there any attendance concession granted if a student is detained by city traffic police during the morning commute?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a74.3 covers Duty Leave for university sports and conferences, but unf...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a74.3 covers Duty Leave for university sports and conferences, but unforeseen transit delays or traffic detainments are not recognized.\n\n\u2022 **Nearest Adjacent Regulation:** Attendance duty leave and institutional representation\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.42,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 3.2",
-      "Scholarship Policy \u00a7 3.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802341",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.3425412,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I get an emergency duplicate physical ID card issued on a Sunday if the main administrative block is closed?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a73.1 lists Rs. 500 for duplicate ID cards within 5 working days, but ...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a73.1 lists Rs. 500 for duplicate ID cards within 5 working days, but no emergency weekend or Sunday issuance service is specified.\n\n\u2022 **Nearest Adjacent Regulation:** Duplicate ID card fee (Rs. 500 in 5 working days)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.55,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 8.1",
-      "Fee Deadlines Schedule \u00a7 3.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802327",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.327785,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Does Medi-Caps University offer a semester abroad student exchange program for B.Tech CSE students in their 5th semester?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a72.2 allows SWAYAM/NPTEL MOOCs for Honors credits, but contains no in...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a72.2 allows SWAYAM/NPTEL MOOCs for Honors credits, but contains no institutional guidelines or credit transfers for foreign semester exchange programs.\n\n\u2022 **Nearest Adjacent Regulation:** Curricular structure, CBCS credit framework, and NPTEL credits\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 5.39,
-    "citations_count": 2,
-    "citations_summary": [
-      "Fee Deadlines Schedule Section Overview",
-      "Academic Regulations \u00a7 5.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802311",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.3116841,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Are students permitted to operate a paid tutoring startup or freelancing software business from campus Wi-Fi?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Discipline covers anti-ragging, substance abuse, and vandalism, but there is no co...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Discipline covers anti-ragging, substance abuse, and vandalism, but there is no commercial usage policy for campus internet or student freelancing.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel code of conduct and student discipline\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 4.1",
-      "Hostel Code of Conduct \u00a7 2.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802299",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.2996876,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can a day-scholar student stay overnight in a friend's hostel room during exam week by paying a daily guest fee?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for d...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for day-scholar peer guest stays during examination weeks.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel room occupancy and summer break per-day charges\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Fee Deadlines Schedule \u00a7 2.4",
-      "Hostel Code of Conduct \u00a7 7.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802287",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.2876854,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What compensation or liability does the university provide if my laptop is stolen from the Central Library reading hall?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Library clearances and hostel inspections are covered, but liability, compensation...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Library clearances and hostel inspections are covered, but liability, compensation, or CCTV theft investigation policies for personal electronic theft are omitted.\n\n\u2022 **Nearest Adjacent Regulation:** Library dues and campus property discipline\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 3.1",
-      "Fee Deadlines Schedule \u00a7 2.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802275",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.2752738,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I switch my minor degree specialization from Artificial Intelligence to Robotics in the 6th semester?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a78 covers engineering branch change at 2nd semester end, and \u00a72.2 cov...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a78 covers engineering branch change at 2nd semester end, and \u00a72.2 covers Honors degrees, but there are no rules for changing minors in the 6th semester.\n\n\u2022 **Nearest Adjacent Regulation:** Branch change (1st year only) and honors degree elective tracks\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Academic Regulations \u00a7 7.2",
-      "Academic Regulations \u00a7 5.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802264",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.2642727,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What is the penalty if I order food through Swiggy or Zomato to the hostel gate after 10:00 PM?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a75.1 states delivery boys cannot enter residential blocks and must drop foo...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a75.1 states delivery boys cannot enter residential blocks and must drop food at Gate 1, but does not specify penalties for deliveries received at the gate after curfew.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel gate timings (9 PM / 9:30 PM) and food delivery up to Gate 1\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 2.1",
-      "Hostel Code of Conduct \u00a7 5.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802253",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.2534657,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I keep an emotional support dog, cat, or small aquarium in the girls' hostel room?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 1 and 4 govern furniture and room maintenance, but there is no explicit cl...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 1 and 4 govern furniture and room maintenance, but there is no explicit clause regarding pets, guide animals, or aquariums.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel room occupancy and furniture regulations\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.01,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 7.1",
-      "Hostel Code of Conduct \u00a7 4.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802241",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.2412019,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Is there any financial aid or tuition waiver available for students whose parents are alumni of Medi-Caps University?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 3 covers defense, siblings, and single girl child, but contains no alumni ...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 3 covers defense, siblings, and single girl child, but contains no alumni legacy concession or alumni child fee rebate.\n\n\u2022 **Nearest Adjacent Regulation:** Scholarship schemes (Covers Chancellor merit, defense wards, siblings, single girl child)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.29,
-    "citations_count": 2,
-    "citations_summary": [
-      "Fee Deadlines Schedule \u00a7 2.3",
-      "Fee Deadlines Schedule Section Overview"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802230",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.2302058,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I bring my personal electric scooter and charge it in my hostel room without paying extra utility charges?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 4.1 covers low-power grooming tools, laptops, and bans induction/heaters, ...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 4.1 covers low-power grooming tools, laptops, and bans induction/heaters, but has no provisions regarding EV batteries, charging stations, or e-scooters.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel electrical appliances policy (Covers laptops, mobiles, kettles, heaters)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.47,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 7.1",
-      "Fee Deadlines Schedule \u00a7 2.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802217",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.2175522,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What happens if I miss the End-Semester Examination because of my sister's wedding?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.01,
-    "citations_count": 2,
-    "citations_summary": [
-      "Academic Regulations \u00a7 5.2",
-      "Academic Regulations \u00a7 4.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809802203",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.203768,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What percentage of hostel accommodation fee is refunded if I cancel within 15 days of semester start?",
-    "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2 (medicaps_hostel_code_and_rules.md)** prescribes: \"80%...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2 (medicaps_hostel_code_and_rules.md)** prescribes: \"80% refund of accommodation fee within 15 days; 100% caution deposit refund.\"\n\n\u2022 **Fee Schedule & Deadlines \u00a7 2.4 (medicaps_fee_deadlines_schedule.md)** stipulates: \"0% refund (strictly non-refundable once key issued); caution deposit subject to Rs. 2,000 deduction.\"\n\n**Comparative Discrepancy:** Hostel Handbook \u00a7 7.2 clearly offers an 80% accommodation fee refund within 15 days of semester start and full caution deposit return. Conversely, Fee Schedule \u00a7 2.4 declares all hostel room fees 100% non-refundable once room keys are issued and imposes a mandatory Rs. 2,000 administrative charge on caution deposits, explicitly overriding residential handbooks.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
-    "latency_ms": 2.99,
-    "citations_count": 3,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 7.2",
-      "Fee Schedule & Deadlines \u00a7 2.4",
-      "Fee Deadlines Schedule \u00a7 2.4"
-    ],
-    "conflict_detected": true,
-    "conflict_title": "Hostel Accommodation Fee Refund on Early Cancellation/Withdrawal"
-  },
-  {
-    "id": "rec_1788809802187",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.1879408,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can the Vice Chancellor or Controller of Examinations award grace marks if I am failing a subject?",
-    "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 6.3 (medicaps_academic_regulations_2024.md)** prescribes: \"Z...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 6.3 (medicaps_academic_regulations_2024.md)** prescribes: \"Zero grace marks. Absolute prohibition across all subjects.\"\n\n\u2022 **Ordinance No. 14 \u00a7 11.5 (medicaps_ordinance_14_exam_conduct.pdf)** stipulates: \"Up to 5 grace marks across max 2 theory subjects awarded by Controller of Examinations with VC approval.\"\n\n**Comparative Discrepancy:** Academic Regulations \u00a7 6.3 explicitly forbids any grace marks, stating neither the CoE nor VC has legal authority to award them. In direct contrast, Ordinance No. 14 \u00a7 11.5 empowers the CoE with VC approval to grant up to 5 grace marks across up to two subjects, even adding a 'G' notation to the transcript.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
-    "latency_ms": 3.46,
-    "citations_count": 2,
-    "citations_summary": [
-      "Academic Regulations \u00a7 6.3",
-      "Ordinance No. 14 \u00a7 11.5"
-    ],
-    "conflict_detected": true,
-    "conflict_title": "Award of Grace Marks & Moderation in Theory Examinations"
-  },
-  {
-    "id": "rec_1788809802172",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.1722822,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can attendance between 65% and 75% be condoned by paying a fee without medical certificate?",
-    "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 4.2 (medicaps_academic_regulations_2024.md)** prescribes: \"S...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 4.2 (medicaps_academic_regulations_2024.md)** prescribes: \"Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted.\"\n\n\u2022 **Ordinance No. 14 \u00a7 8.1 (medicaps_ordinance_14_exam_conduct.pdf)** stipulates: \"65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate.\"\n\n**Comparative Discrepancy:** Academic Regulations \u00a7 4.2 establishes a strict, non-waivable 75% rule (floor 70% exclusively for certified medical emergencies) and expressly bans monetary condonation. Conversely, Ordinance No. 14 \u00a7 8.1 grants the Dean of Academic Affairs statutory power to condone attendance down to 65% on payment of a Rs. 1,500 fee without medical records. These two statutory instruments directly contradict each other.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
-    "latency_ms": 3.51,
-    "citations_count": 3,
-    "citations_summary": [
-      "Academic Regulations \u00a7 4.2",
-      "Ordinance No. 14 \u00a7 8.1",
-      "Fee Deadlines Schedule \u00a7 3.1"
-    ],
-    "conflict_detected": true,
-    "conflict_title": "Attendance Requirement & Condonation for End-Semester Examinations"
-  },
-  {
-    "id": "rec_1788809802154",
-    "timestamp": "2026-09-08 01:06:42",
-    "epoch": 1788809802.1547015,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What is the minimum CGPA required to graduate with First Class with Distinction?",
-    "verdict": "answered",
-    "answer_preview": "According to **Academic Regulations \u00a7 10.1** (*\u00a7 10.1 First Class with Distinction and Dean's List*):\n\n\u2022 1. A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entir...",
-    "full_answer": "According to **Academic Regulations \u00a7 10.1** (*\u00a7 10.1 First Class with Distinction and Dean's List*):\n\n\u2022 1. A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entire duration of the programme, shall be declared to have passed in **\"First Class with Distinction\"**.\n\u2022 2. **Dean\u2019s Merit List:** Students securing an SGPA of 9.00 and above in any semester with zero backlog courses are placed on the \"Dean\u2019s Academic Merit Honor Roll\" and awarded a formal commendation certificate at the Annual Convocation ceremony.\n\u2022 3. A student who has appeared in any supplementary, backlog, or improvement examination is automatically ineligible for the award of First Class with Distinction or University Rank Medals.\n\nAdditionally, **Scholarship Policy \u00a7 5.1** (*\u00a7 5.1 Graduate Teaching Assistantships (GTA)*) notes:\n\u2022 #### \u00a7 5.1 Graduate Teaching Assistantships (GTA)\n1. Regular full-time postgraduate students in M.Tech, M.Pharm, and MCA may be awarded Graduate Teaching Assistantships of Rs. 8,000 per month.\n2. In exchange for the fina...",
-    "latency_ms": 6.78,
-    "citations_count": 3,
-    "citations_summary": [
-      "Academic Regulations \u00a7 10.1",
-      "Scholarship Policy \u00a7 5.1",
-      "Academic Regulations \u00a7 4.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759437",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.4376333,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can students install their own personal window air conditioners or portable coolers in hostel rooms by paying an extra electricity meter deposit?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a74.1 bans induction cookers, heaters, and irons, and Fee Schedule lists Air...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a74.1 bans induction cookers, heaters, and irons, and Fee Schedule lists Air-Cooled rooms, but personal tenant AC installation or sub-metering is unaddressed.\n\n\u2022 **Nearest Adjacent Regulation:** Prohibited electrical appliances (heaters, kettles, mini-fridges) and room tiers\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 5.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 4.1",
-      "Hostel Code of Conduct \u00a7 1.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759424",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.4246416,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can international or NRI students pay university tuition fees using cryptocurrency or Bitcoin?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a71.1 specifies Net Banking, UPI, Debit/Credit card, and Bank Challan,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a71.1 specifies Net Banking, UPI, Debit/Credit card, and Bank Challan, but crypto assets or foreign digital currency escrow are not explicitly addressed.\n\n\u2022 **Nearest Adjacent Regulation:** Fee payment modes (ERP Gateway, Net Banking, UPI, Challan)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Fee Deadlines Schedule Section Overview",
-      "Fee Deadlines Schedule \u00a7 2.3"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759411",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.411633,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can a student wear religious headgear or turbans during mechanical engineering workshop lathe machine operations?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Workshop practicals are required under \u00a72.1, but specific safety dress codes, prot...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Workshop practicals are required under \u00a72.1, but specific safety dress codes, protective headgear waivers, or lathe attire rules are absent.\n\n\u2022 **Nearest Adjacent Regulation:** Curricular laboratory credits and campus discipline\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Academic Regulations \u00a7 2.1",
-      "Fee Deadlines Schedule Section Overview"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759399",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.3996375,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What is the procedure if a professor consistently arrives 20 minutes late to classroom lectures?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a74.1 outlines hourly student attendance tracking, but faculty punctua...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a74.1 outlines hourly student attendance tracking, but faculty punctuality grievances or teacher delay reporting channels are not covered.\n\n\u2022 **Nearest Adjacent Regulation:** Attendance calculation framework and contact hours delivered\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.99,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 7.1",
-      "Fee Deadlines Schedule Section Overview"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759387",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.3876371,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can a day-scholar student access the campus gymnasium before 8:00 AM without paying an annual sports subscription?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for d...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for day-scholar peer guest stays during examination weeks.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel room occupancy and summer break per-day charges\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 2.98,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 2.1",
-      "Scholarship Policy \u00a7 3.3"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759375",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.3756356,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Is recreational drone flying allowed on the university sports ground on Sundays for student YouTube channels?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a73 covers athletic tournaments and grounds, but airspace restrictions, dron...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a73 covers athletic tournaments and grounds, but airspace restrictions, drone permits, and recreational videography rules are unstated.\n\n\u2022 **Nearest Adjacent Regulation:** Sports ground usage and campus code of conduct\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 3.1",
-      "Hostel Code of Conduct \u00a7 3.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759362",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.3626363,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can a student dispute a Turnitin plagiarism report if the software flags their own previously published IEEE conference paper?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Scholarship \u00a75.2 covers PhD review and Ordinance 14 covers exam malpractice, but s...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Scholarship \u00a75.2 covers PhD review and Ordinance 14 covers exam malpractice, but self-plagiarism or preprint exclusion thresholds in Turnitin are absent.\n\n\u2022 **Nearest Adjacent Regulation:** Doctoral research committee progress and unfair means penalties\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Ordinance No. 14 \u00a7 1.1",
-      "Ordinance No. 14 \u00a7 3.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759351",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.3516405,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can a student request vegan, keto, or gluten-free meals on medical advice in the university hostel mess?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a75.1 establishes standard dining schedules and food tray rules, but dietary...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a75.1 establishes standard dining schedules and food tray rules, but dietary customization or specialized allergen meals are not addressed.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel mess schedule and meal rebate of Rs. 120/day\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 5.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 5.2",
-      "Hostel Code of Conduct \u00a7 3.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759339",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.3396363,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Is there any daily stipend or honorarium provided by the university for student volunteers in the annual cultural fest Moonstone?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Scholarship \u00a75.1 covers Rs. 8,000 GTA for PG students and Reg \u00a74.3 covers Duty Lea...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Scholarship \u00a75.1 covers Rs. 8,000 GTA for PG students and Reg \u00a74.3 covers Duty Leave, but cultural fest volunteer honorariums are not defined.\n\n\u2022 **Nearest Adjacent Regulation:** Student representation duty leave and graduate teaching assistantships\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 3.1",
-      "Fee Deadlines Schedule \u00a7 2.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759327",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.327637,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What percentage of the university bus transport fee is refunded if I cancel my bus pass midway through the semester?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a72.2 lists annual transport slabs (Rs. 20,000-28,000) and notes passe...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a72.2 lists annual transport slabs (Rs. 20,000-28,000) and notes passes are non-transferable, but sets no mid-term partial refund formula for transit.\n\n\u2022 **Nearest Adjacent Regulation:** University Bus Transportation Fee slabs and general tuition refund\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Fee Deadlines Schedule \u00a7 2.2",
-      "Fee Schedule Tabular \u00a7 Transport"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759315",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.3166409,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can male and female students collaborate together on group projects in the 24/7 central library study cubicles after 8:00 PM?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel timings are 9:00 PM / 9:30 PM, but internal gender segregation or co-ed col...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel timings are 9:00 PM / 9:30 PM, but internal gender segregation or co-ed collaboration guidelines inside central library after 8 PM are not stated.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel gate timings and campus code of conduct\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.03,
-    "citations_count": 2,
-    "citations_summary": [
-      "Scholarship Policy \u00a7 3.3",
-      "Hostel Code of Conduct \u00a7 5.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759303",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.3036425,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I submit my handwritten laboratory assignments digitally on an iPad using Apple Pencil instead of a paper practical file?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a75.1 and \u00a76.3 specify 50% pass criteria in lab evaluations, but mediu...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a75.1 and \u00a76.3 specify 50% pass criteria in lab evaluations, but medium of submission (digital stylus tablet vs bound hardcopy file) is not prescribed.\n\n\u2022 **Nearest Adjacent Regulation:** Continuous Internal Assessment (CIA) laboratory evaluation\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.02,
-    "citations_count": 2,
-    "citations_summary": [
-      "Ordinance No. 14 \u00a7 1.1",
-      "Academic Regulations \u00a7 1.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759292",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.292654,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I take a one-year gap year or semester sabbatical after my second year to pursue an unpaid government fellowship?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a77.2 specifies the 6-year maximum duration for completion, but does n...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a77.2 specifies the 6-year maximum duration for completion, but does not provide formal criteria for taking voluntary gap years or sabbatical breaks.\n\n\u2022 **Nearest Adjacent Regulation:** Maximum duration for degree completion (N+2 rule: 6 years for B.Tech)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.05,
-    "citations_count": 2,
-    "citations_summary": [
-      "Scholarship Policy \u00a7 5.2",
-      "Academic Regulations \u00a7 8.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759282",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.282612,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Is there any attendance concession granted if a student is detained by city traffic police during the morning commute?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a74.3 covers Duty Leave for university sports and conferences, but unf...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a74.3 covers Duty Leave for university sports and conferences, but unforeseen transit delays or traffic detainments are not recognized.\n\n\u2022 **Nearest Adjacent Regulation:** Attendance duty leave and institutional representation\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 2.99,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 3.2",
-      "Scholarship Policy \u00a7 3.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759272",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.2726495,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I get an emergency duplicate physical ID card issued on a Sunday if the main administrative block is closed?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a73.1 lists Rs. 500 for duplicate ID cards within 5 working days, but ...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a73.1 lists Rs. 500 for duplicate ID cards within 5 working days, but no emergency weekend or Sunday issuance service is specified.\n\n\u2022 **Nearest Adjacent Regulation:** Duplicate ID card fee (Rs. 500 in 5 working days)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 8.1",
-      "Fee Deadlines Schedule \u00a7 3.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759261",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.2616444,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Does Medi-Caps University offer a semester abroad student exchange program for B.Tech CSE students in their 5th semester?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a72.2 allows SWAYAM/NPTEL MOOCs for Honors credits, but contains no in...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a72.2 allows SWAYAM/NPTEL MOOCs for Honors credits, but contains no institutional guidelines or credit transfers for foreign semester exchange programs.\n\n\u2022 **Nearest Adjacent Regulation:** Curricular structure, CBCS credit framework, and NPTEL credits\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Fee Deadlines Schedule Section Overview",
-      "Academic Regulations \u00a7 5.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759250",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.2505956,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Are students permitted to operate a paid tutoring startup or freelancing software business from campus Wi-Fi?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Discipline covers anti-ragging, substance abuse, and vandalism, but there is no co...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Discipline covers anti-ragging, substance abuse, and vandalism, but there is no commercial usage policy for campus internet or student freelancing.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel code of conduct and student discipline\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 2.96,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 4.1",
-      "Hostel Code of Conduct \u00a7 2.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759240",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.2406168,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can a day-scholar student stay overnight in a friend's hostel room during exam week by paying a daily guest fee?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for d...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for day-scholar peer guest stays during examination weeks.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel room occupancy and summer break per-day charges\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for day-scholar peer guest stays during e...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for day-scholar peer guest stays during examination weeks.\n\n*Nearest Codified Provision:* Hostel room occupancy and summer break per-day charges",
     "latency_ms": 3.04,
     "citations_count": 2,
     "citations_summary": [
-      "Fee Deadlines Schedule \u00a7 2.4",
-      "Hostel Code of Conduct \u00a7 7.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759228",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.229635,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What compensation or liability does the university provide if my laptop is stolen from the Central Library reading hall?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Library clearances and hostel inspections are covered, but liability, compensation...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Library clearances and hostel inspections are covered, but liability, compensation, or CCTV theft investigation policies for personal electronic theft are omitted.\n\n\u2022 **Nearest Adjacent Regulation:** Library dues and campus property discipline\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 2.02,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 3.1",
-      "Fee Deadlines Schedule \u00a7 2.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759214",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.2156165,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I switch my minor degree specialization from Artificial Intelligence to Robotics in the 6th semester?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a78 covers engineering branch change at 2nd semester end, and \u00a72.2 cov...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a78 covers engineering branch change at 2nd semester end, and \u00a72.2 covers Honors degrees, but there are no rules for changing minors in the 6th semester.\n\n\u2022 **Nearest Adjacent Regulation:** Branch change (1st year only) and honors degree elective tracks\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.03,
-    "citations_count": 2,
-    "citations_summary": [
-      "Academic Regulations \u00a7 7.2",
-      "Academic Regulations \u00a7 5.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759202",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.2028117,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What is the penalty if I order food through Swiggy or Zomato to the hostel gate after 10:00 PM?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a75.1 states delivery boys cannot enter residential blocks and must drop foo...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Hostel \u00a75.1 states delivery boys cannot enter residential blocks and must drop food at Gate 1, but does not specify penalties for deliveries received at the gate after curfew.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel gate timings (9 PM / 9:30 PM) and food delivery up to Gate 1\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.59,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 2.1",
-      "Hostel Code of Conduct \u00a7 5.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759187",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.187221,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I keep an emotional support dog, cat, or small aquarium in the girls' hostel room?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 1 and 4 govern furniture and room maintenance, but there is no explicit cl...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 1 and 4 govern furniture and room maintenance, but there is no explicit clause regarding pets, guide animals, or aquariums.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel room occupancy and furniture regulations\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.01,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 7.1",
-      "Hostel Code of Conduct \u00a7 4.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759174",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.1742153,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Is there any financial aid or tuition waiver available for students whose parents are alumni of Medi-Caps University?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 3 covers defense, siblings, and single girl child, but contains no alumni ...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 3 covers defense, siblings, and single girl child, but contains no alumni legacy concession or alumni child fee rebate.\n\n\u2022 **Nearest Adjacent Regulation:** Scholarship schemes (Covers Chancellor merit, defense wards, siblings, single girl child)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Fee Deadlines Schedule \u00a7 2.3",
-      "Fee Deadlines Schedule Section Overview"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759163",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.1631007,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I bring my personal electric scooter and charge it in my hostel room without paying extra utility charges?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 4.1 covers low-power grooming tools, laptops, and bans induction/heaters, ...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Section 4.1 covers low-power grooming tools, laptops, and bans induction/heaters, but has no provisions regarding EV batteries, charging stations, or e-scooters.\n\n\u2022 **Nearest Adjacent Regulation:** Hostel electrical appliances policy (Covers laptops, mobiles, kettles, heaters)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 7.1",
-      "Fee Deadlines Schedule \u00a7 2.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759151",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.151459,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What happens if I miss the End-Semester Examination because of my sister's wedding?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.52,
-    "citations_count": 2,
-    "citations_summary": [
-      "Academic Regulations \u00a7 5.2",
-      "Academic Regulations \u00a7 4.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809759134",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.1345973,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What percentage of hostel accommodation fee is refunded if I cancel within 15 days of semester start?",
-    "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2 (medicaps_hostel_code_and_rules.md)** prescribes: \"80%...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2 (medicaps_hostel_code_and_rules.md)** prescribes: \"80% refund of accommodation fee within 15 days; 100% caution deposit refund.\"\n\n\u2022 **Fee Schedule & Deadlines \u00a7 2.4 (medicaps_fee_deadlines_schedule.md)** stipulates: \"0% refund (strictly non-refundable once key issued); caution deposit subject to Rs. 2,000 deduction.\"\n\n**Comparative Discrepancy:** Hostel Handbook \u00a7 7.2 clearly offers an 80% accommodation fee refund within 15 days of semester start and full caution deposit return. Conversely, Fee Schedule \u00a7 2.4 declares all hostel room fees 100% non-refundable once room keys are issued and imposes a mandatory Rs. 2,000 administrative charge on caution deposits, explicitly overriding residential handbooks.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
-    "latency_ms": 4.45,
-    "citations_count": 3,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 7.2",
-      "Fee Schedule & Deadlines \u00a7 2.4",
-      "Fee Deadlines Schedule \u00a7 2.4"
-    ],
-    "conflict_detected": true,
-    "conflict_title": "Hostel Accommodation Fee Refund on Early Cancellation/Withdrawal"
-  },
-  {
-    "id": "rec_1788809759119",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.119609,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can the Vice Chancellor or Controller of Examinations award grace marks if I am failing a subject?",
-    "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 6.3 (medicaps_academic_regulations_2024.md)** prescribes: \"Z...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 6.3 (medicaps_academic_regulations_2024.md)** prescribes: \"Zero grace marks. Absolute prohibition across all subjects.\"\n\n\u2022 **Ordinance No. 14 \u00a7 11.5 (medicaps_ordinance_14_exam_conduct.pdf)** stipulates: \"Up to 5 grace marks across max 2 theory subjects awarded by Controller of Examinations with VC approval.\"\n\n**Comparative Discrepancy:** Academic Regulations \u00a7 6.3 explicitly forbids any grace marks, stating neither the CoE nor VC has legal authority to award them. In direct contrast, Ordinance No. 14 \u00a7 11.5 empowers the CoE with VC approval to grant up to 5 grace marks across up to two subjects, even adding a 'G' notation to the transcript.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
-    "latency_ms": 4.45,
-    "citations_count": 2,
-    "citations_summary": [
-      "Academic Regulations \u00a7 6.3",
-      "Ordinance No. 14 \u00a7 11.5"
-    ],
-    "conflict_detected": true,
-    "conflict_title": "Award of Grace Marks & Moderation in Theory Examinations"
-  },
-  {
-    "id": "rec_1788809759105",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.1055193,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can attendance between 65% and 75% be condoned by paying a fee without medical certificate?",
-    "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 4.2 (medicaps_academic_regulations_2024.md)** prescribes: \"S...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 4.2 (medicaps_academic_regulations_2024.md)** prescribes: \"Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted.\"\n\n\u2022 **Ordinance No. 14 \u00a7 8.1 (medicaps_ordinance_14_exam_conduct.pdf)** stipulates: \"65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate.\"\n\n**Comparative Discrepancy:** Academic Regulations \u00a7 4.2 establishes a strict, non-waivable 75% rule (floor 70% exclusively for certified medical emergencies) and expressly bans monetary condonation. Conversely, Ordinance No. 14 \u00a7 8.1 grants the Dean of Academic Affairs statutory power to condone attendance down to 65% on payment of a Rs. 1,500 fee without medical records. These two statutory instruments directly contradict each other.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
-    "latency_ms": 3.54,
-    "citations_count": 3,
-    "citations_summary": [
-      "Academic Regulations \u00a7 4.2",
-      "Ordinance No. 14 \u00a7 8.1",
-      "Fee Deadlines Schedule \u00a7 3.1"
-    ],
-    "conflict_detected": true,
-    "conflict_title": "Attendance Requirement & Condonation for End-Semester Examinations"
-  },
-  {
-    "id": "rec_1788809759089",
-    "timestamp": "2026-09-08 01:05:59",
-    "epoch": 1788809759.0895462,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What is the minimum CGPA required to graduate with First Class with Distinction?",
-    "verdict": "answered",
-    "answer_preview": "According to **Academic Regulations \u00a7 10.1** (*\u00a7 10.1 First Class with Distinction and Dean's List*):\n\n\u2022 1. A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entir...",
-    "full_answer": "According to **Academic Regulations \u00a7 10.1** (*\u00a7 10.1 First Class with Distinction and Dean's List*):\n\n\u2022 1. A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entire duration of the programme, shall be declared to have passed in **\"First Class with Distinction\"**.\n\u2022 2. **Dean\u2019s Merit List:** Students securing an SGPA of 9.00 and above in any semester with zero backlog courses are placed on the \"Dean\u2019s Academic Merit Honor Roll\" and awarded a formal commendation certificate at the Annual Convocation ceremony.\n\u2022 3. A student who has appeared in any supplementary, backlog, or improvement examination is automatically ineligible for the award of First Class with Distinction or University Rank Medals.\n\nAdditionally, **Scholarship Policy \u00a7 5.1** (*\u00a7 5.1 Graduate Teaching Assistantships (GTA)*) notes:\n\u2022 #### \u00a7 5.1 Graduate Teaching Assistantships (GTA)\n1. Regular full-time postgraduate students in M.Tech, M.Pharm, and MCA may be awarded Graduate Teaching Assistantships of Rs. 8,000 per month.\n2. In exchange for the fina...",
-    "latency_ms": 9.98,
-    "citations_count": 3,
-    "citations_summary": [
-      "Academic Regulations \u00a7 10.1",
-      "Scholarship Policy \u00a7 5.1",
-      "Academic Regulations \u00a7 4.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809683139",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.1398215,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can students install their own personal window air conditioners or portable coolers in hostel rooms by paying an extra electricity meter deposit?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 4.1",
-      "Hostel Code of Conduct \u00a7 1.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809683129",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.1291387,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can international or NRI students pay university tuition fees using cryptocurrency or Bitcoin?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.03,
-    "citations_count": 2,
-    "citations_summary": [
-      "Fee Deadlines Schedule Section Overview",
-      "Fee Deadlines Schedule \u00a7 2.3"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809683118",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.1181405,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can a student wear religious headgear or turbans during mechanical engineering workshop lathe machine operations?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 2.04,
-    "citations_count": 2,
-    "citations_summary": [
-      "Academic Regulations \u00a7 2.1",
-      "Fee Deadlines Schedule Section Overview"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809683108",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.1081393,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What is the procedure if a professor consistently arrives 20 minutes late to classroom lectures?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a74.1 outlines hourly student attendance tracking, but faculty punctua...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Academic Reg \u00a74.1 outlines hourly student attendance tracking, but faculty punctuality grievances or teacher delay reporting channels are not covered.\n\n\u2022 **Nearest Adjacent Regulation:** Attendance calculation framework and contact hours delivered\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 7.1",
-      "Fee Deadlines Schedule Section Overview"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809683098",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.0981402,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can a day-scholar student access the campus gymnasium before 8:00 AM without paying an annual sports subscription?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.07,
-    "citations_count": 2,
-    "citations_summary": [
       "Hostel Code of Conduct \u00a7 2.1",
       "Scholarship Policy \u00a7 3.3"
     ],
@@ -1159,15 +126,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809683087",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.087141,
+    "id": "rec_1788847595912",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.9126248,
     "user_email": "guest@medicaps.ac.in",
     "query": "Is recreational drone flying allowed on the university sports ground on Sundays for student YouTube channels?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a73 covers athletic tournaments and grounds, but airspace restrictions, drone permits, and recreational videogra...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a73 covers athletic tournaments and grounds, but airspace restrictions, drone permits, and recreational videography rules are unstated.\n\n*Nearest Codified Provision:* Sports ground usage and campus code of conduct",
+    "latency_ms": 3.45,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 3.1",
@@ -1177,15 +144,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809683076",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.076143,
+    "id": "rec_1788847595902",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.902585,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can a student dispute a Turnitin plagiarism report if the software flags their own previously published IEEE conference paper?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.07,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Scholarship \u00a75.2 covers PhD review and Ordinance 14 covers exam malpractice, but self-plagiarism or preprint exclusion...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Scholarship \u00a75.2 covers PhD review and Ordinance 14 covers exam malpractice, but self-plagiarism or preprint exclusion thresholds in Turnitin are absent.\n\n*Nearest Codified Provision:* Doctoral research committee progress and unfair means penalties",
+    "latency_ms": 3.04,
     "citations_count": 2,
     "citations_summary": [
       "Ordinance No. 14 \u00a7 1.1",
@@ -1195,15 +162,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809683065",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.065726,
+    "id": "rec_1788847595891",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.8915787,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can a student request vegan, keto, or gluten-free meals on medical advice in the university hostel mess?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.31,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a75.1 establishes standard dining schedules and food tray rules, but dietary customization or specialized allerg...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a75.1 establishes standard dining schedules and food tray rules, but dietary customization or specialized allergen meals are not addressed.\n\n*Nearest Codified Provision:* Hostel mess schedule and meal rebate of Rs. 120/day",
+    "latency_ms": 3.07,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 5.2",
@@ -1213,15 +180,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809683054",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.0549607,
+    "id": "rec_1788847595882",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.8824685,
     "user_email": "guest@medicaps.ac.in",
     "query": "Is there any daily stipend or honorarium provided by the university for student volunteers in the annual cultural fest Moonstone?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.01,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Scholarship \u00a75.1 covers Rs. 8,000 GTA for PG students and Reg \u00a74.3 covers Duty Leave, but cultural fest volunteer hono...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Scholarship \u00a75.1 covers Rs. 8,000 GTA for PG students and Reg \u00a74.3 covers Duty Leave, but cultural fest volunteer honorariums are not defined.\n\n*Nearest Codified Provision:* Student representation duty leave and graduate teaching assistantships",
+    "latency_ms": 4.63,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 3.1",
@@ -1231,15 +198,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809683042",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.0428102,
+    "id": "rec_1788847595871",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.8715901,
     "user_email": "guest@medicaps.ac.in",
     "query": "What percentage of the university bus transport fee is refunded if I cancel my bus pass midway through the semester?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a72.2 lists annual transport slabs (Rs. 20,000-28,000) and notes passe...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a72.2 lists annual transport slabs (Rs. 20,000-28,000) and notes passes are non-transferable, but sets no mid-term partial refund formula for transit.\n\n\u2022 **Nearest Adjacent Regulation:** University Bus Transportation Fee slabs and general tuition refund\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.39,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Fee Schedule \u00a72.2 lists annual transport slabs (Rs. 20,000-28,000) and notes passes are non-transferable, but sets no ...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Fee Schedule \u00a72.2 lists annual transport slabs (Rs. 20,000-28,000) and notes passes are non-transferable, but sets no mid-term partial refund formula for transit.\n\n*Nearest Codified Provision:* University Bus Transportation Fee slabs and general tuition refund",
+    "latency_ms": 3.0,
     "citations_count": 2,
     "citations_summary": [
       "Fee Deadlines Schedule \u00a7 2.2",
@@ -1249,15 +216,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809683030",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.0304942,
+    "id": "rec_1788847595862",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.862515,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can male and female students collaborate together on group projects in the 24/7 central library study cubicles after 8:00 PM?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 2.44,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel timings are 9:00 PM / 9:30 PM, but internal gender segregation or co-ed collaboration guidelines inside central...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel timings are 9:00 PM / 9:30 PM, but internal gender segregation or co-ed collaboration guidelines inside central library after 8 PM are not stated.\n\n*Nearest Codified Provision:* Hostel gate timings and campus code of conduct",
+    "latency_ms": 3.98,
     "citations_count": 2,
     "citations_summary": [
       "Scholarship Policy \u00a7 3.3",
@@ -1267,15 +234,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809683019",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.0199442,
+    "id": "rec_1788847595852",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.8524616,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can I submit my handwritten laboratory assignments digitally on an iPad using Apple Pencil instead of a paper practical file?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a75.1 and \u00a76.3 specify 50% pass criteria in lab evaluations, but medium of submission (digital stylus tabl...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a75.1 and \u00a76.3 specify 50% pass criteria in lab evaluations, but medium of submission (digital stylus tablet vs bound hardcopy file) is not prescribed.\n\n*Nearest Codified Provision:* Continuous Internal Assessment (CIA) laboratory evaluation",
+    "latency_ms": 3.26,
     "citations_count": 2,
     "citations_summary": [
       "Ordinance No. 14 \u00a7 1.1",
@@ -1285,15 +252,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809683009",
-    "timestamp": "2026-09-08 01:04:43",
-    "epoch": 1788809683.009049,
+    "id": "rec_1788847595843",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.8431976,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can I take a one-year gap year or semester sabbatical after my second year to pursue an unpaid government fellowship?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.42,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a77.2 specifies the 6-year maximum duration for completion, but does not provide formal criteria for takin...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a77.2 specifies the 6-year maximum duration for completion, but does not provide formal criteria for taking voluntary gap years or sabbatical breaks.\n\n*Nearest Codified Provision:* Maximum duration for degree completion (N+2 rule: 6 years for B.Tech)",
+    "latency_ms": 3.03,
     "citations_count": 2,
     "citations_summary": [
       "Scholarship Policy \u00a7 5.2",
@@ -1303,15 +270,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809682999",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.9992895,
+    "id": "rec_1788847595834",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.8345764,
     "user_email": "guest@medicaps.ac.in",
     "query": "Is there any attendance concession granted if a student is detained by city traffic police during the morning commute?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.07,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a74.3 covers Duty Leave for university sports and conferences, but unforeseen transit delays or traffic de...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a74.3 covers Duty Leave for university sports and conferences, but unforeseen transit delays or traffic detainments are not recognized.\n\n*Nearest Codified Provision:* Attendance duty leave and institutional representation",
+    "latency_ms": 3.06,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 3.2",
@@ -1321,15 +288,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809682989",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.9897583,
+    "id": "rec_1788847595824",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.8244586,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can I get an emergency duplicate physical ID card issued on a Sunday if the main administrative block is closed?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Fee Schedule \u00a73.1 lists Rs. 500 for duplicate ID cards within 5 working days, but no emergency weekend or Sunday issua...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Fee Schedule \u00a73.1 lists Rs. 500 for duplicate ID cards within 5 working days, but no emergency weekend or Sunday issuance service is specified.\n\n*Nearest Codified Provision:* Duplicate ID card fee (Rs. 500 in 5 working days)",
+    "latency_ms": 2.58,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 8.1",
@@ -1339,15 +306,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809682981",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.9811082,
+    "id": "rec_1788847595814",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.8148847,
     "user_email": "guest@medicaps.ac.in",
     "query": "Does Medi-Caps University offer a semester abroad student exchange program for B.Tech CSE students in their 5th semester?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.33,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a72.2 allows SWAYAM/NPTEL MOOCs for Honors credits, but contains no institutional guidelines or credit tra...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a72.2 allows SWAYAM/NPTEL MOOCs for Honors credits, but contains no institutional guidelines or credit transfers for foreign semester exchange programs.\n\n*Nearest Codified Provision:* Curricular structure, CBCS credit framework, and NPTEL credits",
+    "latency_ms": 3.99,
     "citations_count": 2,
     "citations_summary": [
       "Fee Deadlines Schedule Section Overview",
@@ -1357,15 +324,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809682969",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.9709954,
+    "id": "rec_1788847595804",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.8049147,
     "user_email": "guest@medicaps.ac.in",
     "query": "Are students permitted to operate a paid tutoring startup or freelancing software business from campus Wi-Fi?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 2.01,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Discipline covers anti-ragging, substance abuse, and vandalism, but there is no commercial usage policy for campus int...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Discipline covers anti-ragging, substance abuse, and vandalism, but there is no commercial usage policy for campus internet or student freelancing.\n\n*Nearest Codified Provision:* Hostel code of conduct and student discipline",
+    "latency_ms": 3.12,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 4.1",
@@ -1375,15 +342,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809682961",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.9613512,
+    "id": "rec_1788847595796",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.796639,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can a day-scholar student stay overnight in a friend's hostel room during exam week by paying a daily guest fee?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.35,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for day-scholar peer guest stays during e...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a71.2 allows summer stay for enrolled interns, but no provision exists for day-scholar peer guest stays during examination weeks.\n\n*Nearest Codified Provision:* Hostel room occupancy and summer break per-day charges",
+    "latency_ms": 3.15,
     "citations_count": 2,
     "citations_summary": [
       "Fee Deadlines Schedule \u00a7 2.4",
@@ -1393,15 +360,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809682950",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.9504628,
+    "id": "rec_1788847595787",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.787202,
     "user_email": "guest@medicaps.ac.in",
     "query": "What compensation or liability does the university provide if my laptop is stolen from the Central Library reading hall?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.37,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Library clearances and hostel inspections are covered, but liability, compensation, or CCTV theft investigation polici...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Library clearances and hostel inspections are covered, but liability, compensation, or CCTV theft investigation policies for personal electronic theft are omitted.\n\n*Nearest Codified Provision:* Library dues and campus property discipline",
+    "latency_ms": 3.29,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 3.1",
@@ -1411,15 +378,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809682934",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.935762,
+    "id": "rec_1788847595775",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.775739,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can I switch my minor degree specialization from Artificial Intelligence to Robotics in the 6th semester?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a78 covers engineering branch change at 2nd semester end, and \u00a72.2 covers Honors degrees, but there are no...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Academic Reg \u00a78 covers engineering branch change at 2nd semester end, and \u00a72.2 covers Honors degrees, but there are no rules for changing minors in the 6th semester.\n\n*Nearest Codified Provision:* Branch change (1st year only) and honors degree elective tracks",
+    "latency_ms": 5.18,
     "citations_count": 2,
     "citations_summary": [
       "Academic Regulations \u00a7 7.2",
@@ -1429,15 +396,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809682921",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.9217653,
+    "id": "rec_1788847595761",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.7618296,
     "user_email": "guest@medicaps.ac.in",
     "query": "What is the penalty if I order food through Swiggy or Zomato to the hostel gate after 10:00 PM?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 6.0,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a75.1 states delivery boys cannot enter residential blocks and must drop food at Gate 1, but does not specify pe...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Hostel \u00a75.1 states delivery boys cannot enter residential blocks and must drop food at Gate 1, but does not specify penalties for deliveries received at the gate after curfew.\n\n*Nearest Codified Provision:* Hostel gate timings (9 PM / 9:30 PM) and food delivery up to Gate 1",
+    "latency_ms": 4.27,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 2.1",
@@ -1447,15 +414,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809682900",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.9007673,
+    "id": "rec_1788847595748",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.7489579,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can I keep an emotional support dog, cat, or small aquarium in the girls' hostel room?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 2.96,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Section 1 and 4 govern furniture and room maintenance, but there is no explicit clause regarding pets, guide animals, ...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Section 1 and 4 govern furniture and room maintenance, but there is no explicit clause regarding pets, guide animals, or aquariums.\n\n*Nearest Codified Provision:* Hostel room occupancy and furniture regulations",
+    "latency_ms": 5.01,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 7.1",
@@ -1465,234 +432,17 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809682888",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.8887665,
+    "id": "rec_1788847595733",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.7336307,
     "user_email": "guest@medicaps.ac.in",
     "query": "Is there any financial aid or tuition waiver available for students whose parents are alumni of Medi-Caps University?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Fee Deadlines Schedule \u00a7 2.3",
-      "Fee Deadlines Schedule Section Overview"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809682878",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.8787684,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I bring my personal electric scooter and charge it in my hostel room without paying extra utility charges?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.0,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 7.1",
-      "Fee Deadlines Schedule \u00a7 2.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809682867",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.8678434,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What happens if I miss the End-Semester Examination because of my sister's wedding?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.48,
-    "citations_count": 2,
-    "citations_summary": [
-      "Academic Regulations \u00a7 5.2",
-      "Academic Regulations \u00a7 4.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809682847",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.8478098,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What percentage of hostel accommodation fee is refunded if I cancel within 15 days of semester start?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a72.2 lists annual transport slabs (Rs. 20,000-28,000) and notes passe...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Fee Schedule \u00a72.2 lists annual transport slabs (Rs. 20,000-28,000) and notes passes are non-transferable, but sets no mid-term partial refund formula for transit.\n\n\u2022 **Nearest Adjacent Regulation:** University Bus Transportation Fee slabs and general tuition refund\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.21,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 7.2",
-      "Fee Deadlines Schedule \u00a7 2.4"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809682833",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.8334048,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can the Vice Chancellor or Controller of Examinations award grace marks if I am failing a subject?",
-    "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 6.3 (medicaps_academic_regulations_2024.md)** prescribes: \"Z...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 6.3 (medicaps_academic_regulations_2024.md)** prescribes: \"Zero grace marks. Absolute prohibition across all subjects.\"\n\n\u2022 **Ordinance No. 14 \u00a7 11.5 (medicaps_ordinance_14_exam_conduct.pdf)** stipulates: \"Up to 5 grace marks across max 2 theory subjects awarded by Controller of Examinations with VC approval.\"\n\n**Comparative Discrepancy:** Academic Regulations \u00a7 6.3 explicitly forbids any grace marks, stating neither the CoE nor VC has legal authority to award them. In direct contrast, Ordinance No. 14 \u00a7 11.5 empowers the CoE with VC approval to grant up to 5 grace marks across up to two subjects, even adding a 'G' notation to the transcript.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
-    "latency_ms": 3.64,
-    "citations_count": 2,
-    "citations_summary": [
-      "Academic Regulations \u00a7 6.3",
-      "Ordinance No. 14 \u00a7 11.5"
-    ],
-    "conflict_detected": true,
-    "conflict_title": "Award of Grace Marks & Moderation in Theory Examinations"
-  },
-  {
-    "id": "rec_1788809682503",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.503472,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can attendance between 65% and 75% be condoned by paying a fee without medical certificate?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.06,
-    "citations_count": 2,
-    "citations_summary": [
-      "Academic Regulations \u00a7 4.2",
-      "Fee Deadlines Schedule \u00a7 3.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809682489",
-    "timestamp": "2026-09-08 01:04:42",
-    "epoch": 1788809682.490649,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What is the minimum CGPA required to graduate with First Class with Distinction?",
-    "verdict": "answered",
-    "answer_preview": "According to **Academic Regulations \u00a7 10.1** (*\u00a7 10.1 First Class with Distinction and Dean's List*):\n\n\u2022 1. A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entir...",
-    "full_answer": "According to **Academic Regulations \u00a7 10.1** (*\u00a7 10.1 First Class with Distinction and Dean's List*):\n\n\u2022 1. A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entire duration of the programme, shall be declared to have passed in **\"First Class with Distinction\"**.\n\u2022 2. **Dean\u2019s Merit List:** Students securing an SGPA of 9.00 and above in any semester with zero backlog courses are placed on the \"Dean\u2019s Academic Merit Honor Roll\" and awarded a formal commendation certificate at the Annual Convocation ceremony.\n\u2022 3. A student who has appeared in any supplementary, backlog, or improvement examination is automatically ineligible for the award of First Class with Distinction or University Rank Medals.\n\nAdditionally, **Scholarship Policy \u00a7 5.1** (*\u00a7 5.1 Graduate Teaching Assistantships (GTA)*) notes:\n\u2022 #### \u00a7 5.1 Graduate Teaching Assistantships (GTA)\n1. Regular full-time postgraduate students in M.Tech, M.Pharm, and MCA may be awarded Graduate Teaching Assistantships of Rs. 8,000 per month.\n2. In exchange for the fina...",
-    "latency_ms": 5.52,
-    "citations_count": 3,
-    "citations_summary": [
-      "Academic Regulations \u00a7 10.1",
-      "Scholarship Policy \u00a7 5.1",
-      "Academic Regulations \u00a7 4.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809630659",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.659461,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can a day-scholar student stay overnight in a friend's hostel room during exam week by paying a daily guest fee?",
-    "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Fee Deadlines Schedule \u00a7 2.4 (medicaps_fee_deadlines_schedule.md)** prescribes: \"Re...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Fee Deadlines Schedule \u00a7 2.4 (medicaps_fee_deadlines_schedule.md)** prescribes: \"Restrictive / Prohibitive Clause\"\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2 (medicaps_hostel_code_and_rules.md)** stipulates: \"Discretionary / Permissive Clause\"\n\n**Comparative Discrepancy:** One regulation imposes an absolute prohibition while the other establishes permissive authority.\n\n**Administrative Guidance:** Refer to the Academic Council or Vice-Chancellor for authoritative interpretation.",
-    "latency_ms": 3.26,
-    "citations_count": 2,
-    "citations_summary": [
-      "Fee Deadlines Schedule \u00a7 2.4",
-      "Hostel Code of Conduct \u00a7 7.2"
-    ],
-    "conflict_detected": true,
-    "conflict_title": "Regulatory Discrepancy between Fee Deadlines Schedule \u00a7 2.4 and Hostel Code of Conduct \u00a7 7.2"
-  },
-  {
-    "id": "rec_1788809630649",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.6499867,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What compensation or liability does the university provide if my laptop is stolen from the Central Library reading hall?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.08,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 3.1",
-      "Fee Deadlines Schedule \u00a7 2.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809630639",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.6399019,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I switch my minor degree specialization from Artificial Intelligence to Robotics in the 6th semester?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Section 3 covers defense, siblings, and single girl child, but contains no alumni legacy concession or alumni child fe...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Section 3 covers defense, siblings, and single girl child, but contains no alumni legacy concession or alumni child fee rebate.\n\n*Nearest Codified Provision:* Scholarship schemes (Covers Chancellor merit, defense wards, siblings, single girl child)",
     "latency_ms": 4.0,
     "citations_count": 2,
     "citations_summary": [
-      "Academic Regulations \u00a7 7.2",
-      "Academic Regulations \u00a7 5.2"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809630630",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.6309052,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "What is the penalty if I order food through Swiggy or Zomato to the hostel gate after 10:00 PM?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.14,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 2.1",
-      "Hostel Code of Conduct \u00a7 5.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809630621",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.6212478,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Can I keep an emotional support dog, cat, or small aquarium in the girls' hostel room?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.32,
-    "citations_count": 2,
-    "citations_summary": [
-      "Hostel Code of Conduct \u00a7 7.1",
-      "Hostel Code of Conduct \u00a7 4.1"
-    ],
-    "conflict_detected": false,
-    "conflict_title": null
-  },
-  {
-    "id": "rec_1788809630611",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.611866,
-    "user_email": "guest@medicaps.ac.in",
-    "query": "Is there any financial aid or tuition waiver available for students whose parents are alumni of Medi-Caps University?",
-    "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.54,
-    "citations_count": 2,
-    "citations_summary": [
       "Fee Deadlines Schedule \u00a7 2.3",
       "Fee Deadlines Schedule Section Overview"
     ],
@@ -1700,15 +450,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809630601",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.6012025,
+    "id": "rec_1788847595721",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.7219372,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can I bring my personal electric scooter and charge it in my hostel room without paying extra utility charges?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 4.06,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Section 4.1 covers low-power grooming tools, laptops, and bans induction/heaters, but has no provisions regarding EV b...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Section 4.1 covers low-power grooming tools, laptops, and bans induction/heaters, but has no provisions regarding EV batteries, charging stations, or e-scooters.\n\n*Nearest Codified Provision:* Hostel electrical appliances policy (Covers laptops, mobiles, kettles, heaters)",
+    "latency_ms": 3.0,
     "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 7.1",
@@ -1718,15 +468,15 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809630590",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.5903594,
+    "id": "rec_1788847595710",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.7105985,
     "user_email": "guest@medicaps.ac.in",
     "query": "What happens if I miss the End-Semester Examination because of my sister's wedding?",
     "verdict": "not_covered",
-    "answer_preview": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies,...",
-    "full_answer": "**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n\u2022 **Specific Absence:** Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n\u2022 **Nearest Adjacent Regulation:** Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)\n\nBecause the University has not codified an explicit policy for this circumstance, no definitive regulatory guarantee can be derived from the handbook. The student is advised to submit a formal written request to the Dean of Student Welfare or concerned Department Head.",
-    "latency_ms": 3.25,
+    "answer_preview": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasi...",
+    "full_answer": "**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n\u2022 Clause 5.1 of Academic Regulations covers missed tests due to medical emergencies, but family functions, social occasions, or weddings are not mentioned.\n\n*Nearest Codified Provision:* Missed examination & makeup policy (Rulebook only covers verified medical emergencies with hospital certificates)",
+    "latency_ms": 4.07,
     "citations_count": 2,
     "citations_summary": [
       "Academic Regulations \u00a7 5.2",
@@ -1736,34 +486,33 @@
     "conflict_title": null
   },
   {
-    "id": "rec_1788809630578",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.578381,
+    "id": "rec_1788847595697",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.6979592,
     "user_email": "guest@medicaps.ac.in",
     "query": "What percentage of hostel accommodation fee is refunded if I cancel within 15 days of semester start?",
     "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2 (medicaps_hostel_code_and_rules.md)** prescribes: \"80%...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2 (medicaps_hostel_code_and_rules.md)** prescribes: \"80% refund of accommodation fee within 15 days; 100% caution deposit refund.\"\n\n\u2022 **Fee Schedule & Deadlines \u00a7 2.4 (medicaps_fee_deadlines_schedule.md)** stipulates: \"0% refund (strictly non-refundable once key issued); caution deposit subject to Rs. 2,000 deduction.\"\n\n**Comparative Discrepancy:** Hostel Handbook \u00a7 7.2 clearly offers an 80% accommodation fee refund within 15 days of semester start and full caution deposit return. Conversely, Fee Schedule \u00a7 2.4 declares all hostel room fees 100% non-refundable once room keys are issued and imposes a mandatory Rs. 2,000 administrative charge on caution deposits, explicitly overriding residential handbooks.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
-    "latency_ms": 3.4,
-    "citations_count": 3,
+    "answer_preview": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2**: 80% refund of accommodation fee within 15 days; 100%...",
+    "full_answer": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Hostel Code of Conduct \u00a7 7.2**: 80% refund of accommodation fee within 15 days; 100% caution deposit refund.\n\u2022 **Fee Schedule & Deadlines \u00a7 2.4**: 0% refund (strictly non-refundable once key issued); caution deposit subject to Rs. 2,000 deduction.\n\nNeither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below.",
+    "latency_ms": 4.09,
+    "citations_count": 2,
     "citations_summary": [
       "Hostel Code of Conduct \u00a7 7.2",
-      "Fee Schedule & Deadlines \u00a7 2.4",
-      "Fee Deadlines Schedule \u00a7 2.4"
+      "Fee Schedule & Deadlines \u00a7 2.4"
     ],
     "conflict_detected": true,
     "conflict_title": "Hostel Accommodation Fee Refund on Early Cancellation/Withdrawal"
   },
   {
-    "id": "rec_1788809630567",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.5672264,
+    "id": "rec_1788847595685",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.685479,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can the Vice Chancellor or Controller of Examinations award grace marks if I am failing a subject?",
     "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 6.3 (medicaps_academic_regulations_2024.md)** prescribes: \"Z...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 6.3 (medicaps_academic_regulations_2024.md)** prescribes: \"Zero grace marks. Absolute prohibition across all subjects.\"\n\n\u2022 **Ordinance No. 14 \u00a7 11.5 (medicaps_ordinance_14_exam_conduct.pdf)** stipulates: \"Up to 5 grace marks across max 2 theory subjects awarded by Controller of Examinations with VC approval.\"\n\n**Comparative Discrepancy:** Academic Regulations \u00a7 6.3 explicitly forbids any grace marks, stating neither the CoE nor VC has legal authority to award them. In direct contrast, Ordinance No. 14 \u00a7 11.5 empowers the CoE with VC approval to grant up to 5 grace marks across up to two subjects, even adding a 'G' notation to the transcript.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
-    "latency_ms": 2.86,
+    "answer_preview": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 6.3**: Zero grace marks. Absolute prohibition across all subj...",
+    "full_answer": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 6.3**: Zero grace marks. Absolute prohibition across all subjects.\n\u2022 **Ordinance No. 14 \u00a7 11.5**: Up to 5 grace marks across max 2 theory subjects awarded by Controller of Examinations with VC approval.\n\nNeither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below.",
+    "latency_ms": 4.24,
     "citations_count": 2,
     "citations_summary": [
       "Academic Regulations \u00a7 6.3",
@@ -1773,39 +522,37 @@
     "conflict_title": "Award of Grace Marks & Moderation in Theory Examinations"
   },
   {
-    "id": "rec_1788809630554",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.554723,
+    "id": "rec_1788847595668",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.6686075,
     "user_email": "guest@medicaps.ac.in",
     "query": "Can attendance between 65% and 75% be condoned by paying a fee without medical certificate?",
     "verdict": "conflict",
-    "answer_preview": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 4.2 (medicaps_academic_regulations_2024.md)** prescribes: \"S...",
-    "full_answer": "**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory clauses governing this topic.\n\n\u2022 **Academic Regulations \u00a7 4.2 (medicaps_academic_regulations_2024.md)** prescribes: \"Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted.\"\n\n\u2022 **Ordinance No. 14 \u00a7 8.1 (medicaps_ordinance_14_exam_conduct.pdf)** stipulates: \"65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate.\"\n\n**Comparative Discrepancy:** Academic Regulations \u00a7 4.2 establishes a strict, non-waivable 75% rule (floor 70% exclusively for certified medical emergencies) and expressly bans monetary condonation. Conversely, Ordinance No. 14 \u00a7 8.1 grants the Dean of Academic Affairs statutory power to condone attendance down to 65% on payment of a Rs. 1,500 fee without medical records. These two statutory instruments directly contradict each other.\n\n**Administrative Guidance:** This is an un-reconciled statutory discrepancy between Medi-Caps University regulations. Students facing this issue must seek a formal written determination from the Registrar or Academic Council before relying on either clause.",
-    "latency_ms": 4.33,
-    "citations_count": 3,
+    "answer_preview": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or admi...",
+    "full_answer": "**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n\u2022 **Academic Regulations \u00a7 4.2**: Strict 75% (or 70% with Medical Board). No fee or administrative condonation permitted.\n\u2022 **Ordinance No. 14 \u00a7 8.1**: 65.0% - 74.9% condoned by Dean Academic Affairs upon payment of Rs. 1,500 per subject, without medical certificate.\n\nNeither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below.",
+    "latency_ms": 4.0,
+    "citations_count": 2,
     "citations_summary": [
       "Academic Regulations \u00a7 4.2",
-      "Ordinance No. 14 \u00a7 8.1",
-      "Fee Deadlines Schedule \u00a7 3.1"
+      "Ordinance No. 14 \u00a7 8.1"
     ],
     "conflict_detected": true,
     "conflict_title": "Attendance Requirement & Condonation for End-Semester Examinations"
   },
   {
-    "id": "rec_1788809630540",
-    "timestamp": "2026-09-08 01:03:50",
-    "epoch": 1788809630.5401878,
+    "id": "rec_1788847595647",
+    "timestamp": "2026-09-08 11:36:35",
+    "epoch": 1788847595.6471958,
     "user_email": "guest@medicaps.ac.in",
     "query": "What is the minimum CGPA required to graduate with First Class with Distinction?",
     "verdict": "answered",
-    "answer_preview": "According to **Academic Regulations \u00a7 10.1** (*\u00a7 10.1 First Class with Distinction and Dean's List*):\n\n\u2022 1. A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entir...",
-    "full_answer": "According to **Academic Regulations \u00a7 10.1** (*\u00a7 10.1 First Class with Distinction and Dean's List*):\n\n\u2022 1. A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entire duration of the programme, shall be declared to have passed in **\"First Class with Distinction\"**.\n\u2022 2. **Dean\u2019s Merit List:** Students securing an SGPA of 9.00 and above in any semester with zero backlog courses are placed on the \"Dean\u2019s Academic Merit Honor Roll\" and awarded a formal commendation certificate at the Annual Convocation ceremony.\n\u2022 3. A student who has appeared in any supplementary, backlog, or improvement examination is automatically ineligible for the award of First Class with Distinction or University Rank Medals.\n\nAdditionally, **Scholarship Policy \u00a7 5.1** (*\u00a7 5.1 Graduate Teaching Assistantships (GTA)*) notes:\n\u2022 #### \u00a7 5.1 Graduate Teaching Assistantships (GTA)\n1. Regular full-time postgraduate students in M.Tech, M.Pharm, and MCA may be awarded Graduate Teaching Assistantships of Rs. 8,000 per month.\n2. In exchange for the fina...",
-    "latency_ms": 4.65,
-    "citations_count": 3,
+    "answer_preview": "**Academic Regulations \u00a7 10.1** (\u00a7 10.1 First Class with Distinction and Dean's List) stipulates:\n\n> \"A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entire dura...",
+    "full_answer": "**Academic Regulations \u00a7 10.1** (\u00a7 10.1 First Class with Distinction and Dean's List) stipulates:\n\n> \"A candidate who secures a final CGPA of 8.50 and above, without having failed in any course throughout the entire duration of the programme, shall be declared to have passed in **\"First Class with Distinction\"**.\"\n\nAdditionally: **Dean\u2019s Merit List:** Students securing an SGPA of 9.00 and above in any semester with zero backlog courses are placed on the \"Dean\u2019s Academic Merit Honor Roll\" and awarded a formal commendation certificate at the Annual Convocation ceremony.",
+    "latency_ms": 9.73,
+    "citations_count": 2,
     "citations_summary": [
       "Academic Regulations \u00a7 10.1",
-      "Scholarship Policy \u00a7 5.1",
-      "Academic Regulations \u00a7 4.2"
+      "Scholarship Policy \u00a7 5.1"
     ],
     "conflict_detected": false,
     "conflict_title": null

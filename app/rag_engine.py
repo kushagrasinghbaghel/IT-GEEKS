@@ -119,19 +119,15 @@ class RAGEngine:
                     "section_ref": ch["section_ref"],
                     "doc_name": ch["doc_name"],
                     "title": ch["title"],
-                    "excerpt": ch["content"][:280] + "...",
+                    "excerpt": self._clean_excerpt(ch["content"]),
                     "similarity_score": round(ch["similarity_score"] * 0.45, 4),
                     "format": ch["doc_format"]
                 })
 
             answer_text = (
-                f"**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n"
-                f"• **Specific Absence:** {reason}\n\n"
-                f"• **Nearest Adjacent Regulation:** {adjacent_info}\n\n"
-                f"Because the University has not codified an explicit policy for this circumstance, "
-                f"no definitive regulatory guarantee can be derived from the handbook. "
-                f"The student is advised to submit a formal written request to the Dean of Student Welfare "
-                f"or concerned Department Head."
+                f"**Not Covered in Official Rulebook:** Medi-Caps University regulations are silent on this inquiry.\n\n"
+                f"• {reason}\n\n"
+                f"*Nearest Codified Provision:* {adjacent_info}"
             )
 
             return {
@@ -150,7 +146,6 @@ class RAGEngine:
         # 2. Check for Conflicts
         conflict_res = self.conflict_detector.detect_conflict(cleaned_query, retrieved_chunks)
         if conflict_res:
-            # Enrich citations with the conflicting clauses
             citations = []
             seen_refs = set()
             for clause_key in ["clause_a", "clause_b"]:
@@ -159,34 +154,17 @@ class RAGEngine:
                     "section_ref": c["section_ref"],
                     "doc_name": c["document"],
                     "title": c["title"],
-                    "excerpt": c["excerpt"],
+                    "excerpt": self._clean_excerpt(c["excerpt"]),
                     "similarity_score": c["similarity_score"],
                     "format": "pdf" if ".pdf" in c["document"] else ("tabular" if ".csv" in c["document"] else "markdown")
                 })
                 seen_refs.add(c["section_ref"])
 
-            # Add any other relevant retrieved chunk
-            for ch in retrieved_chunks[:2]:
-                if ch["section_ref"] not in seen_refs:
-                    citations.append({
-                        "section_ref": ch["section_ref"],
-                        "doc_name": ch["doc_name"],
-                        "title": ch["title"],
-                        "excerpt": ch["content"][:300] + "...",
-                        "similarity_score": ch["similarity_score"],
-                        "format": ch["doc_format"]
-                    })
-                    seen_refs.add(ch["section_ref"])
-
             answer_text = (
-                f"**CONFLICT DETECTED:** The Medi-Caps University regulatory corpus contains two mutually contradictory "
-                f"clauses governing this topic.\n\n"
-                f"• **{conflict_res['clause_a']['section_ref']} ({conflict_res['clause_a']['document']})** prescribes: "
-                f"\"{conflict_res['clause_a']['threshold']}\"\n\n"
-                f"• **{conflict_res['clause_b']['section_ref']} ({conflict_res['clause_b']['document']})** stipulates: "
-                f"\"{conflict_res['clause_b']['threshold']}\"\n\n"
-                f"**Comparative Discrepancy:** {conflict_res['comparative_analysis']}\n\n"
-                f"**Administrative Guidance:** {conflict_res['recommended_action']}"
+                f"**Direct Statutory Conflict Detected:** Two official Medi-Caps University documents prescribe contradictory rules for this matter:\n\n"
+                f"• **{conflict_res['clause_a']['section_ref']}**: {conflict_res['clause_a']['threshold']}\n"
+                f"• **{conflict_res['clause_b']['section_ref']}**: {conflict_res['clause_b']['threshold']}\n\n"
+                f"Neither clause can be assumed unilaterally without administrative reconciliation. See the side-by-side comparison below."
             )
 
             return {
@@ -198,52 +176,14 @@ class RAGEngine:
                 "citations": citations
             }
 
-        # 2. Check for Not Covered / Unanswerable
-        is_not_covered, reason, adjacent_info = self._check_not_covered(cleaned_query, retrieved_chunks)
-        if is_not_covered:
-            citations = []
-            # Return top 2 adjacent chunks to show what IS in the rulebook
-            for ch in retrieved_chunks[:2]:
-                citations.append({
-                    "section_ref": ch["section_ref"],
-                    "doc_name": ch["doc_name"],
-                    "title": ch["title"],
-                    "excerpt": ch["content"][:280] + "...",
-                    "similarity_score": round(ch["similarity_score"] * 0.45, 4), # low similarity reflect lack of match
-                    "format": ch["doc_format"]
-                })
-
-            answer_text = (
-                f"**NOT COVERED IN OFFICIAL REGULATIONS:** The Medi-Caps University rulebook is completely silent on this inquiry.\n\n"
-                f"• **Specific Absence:** {reason}\n\n"
-                f"• **Nearest Adjacent Regulation:** {adjacent_info}\n\n"
-                f"Because the University has not codified an explicit policy for this circumstance, "
-                f"no definitive regulatory guarantee can be derived from the handbook. "
-                f"The student is advised to submit a formal written request to the Dean of Student Welfare "
-                f"or concerned Department Head."
-            )
-
-            return {
-                "status": "success",
-                "verdict": "not_covered",
-                "query": cleaned_query,
-                "answer": answer_text,
-                "conflict_details": None,
-                "citations": citations,
-                "unanswerable_explanation": {
-                    "reason": reason,
-                    "adjacent_topic": adjacent_info
-                }
-            }
-
         # 3. Answered with Citations
         citations = []
-        for ch in retrieved_chunks[:3]:
+        for ch in retrieved_chunks[:2]:
             citations.append({
                 "section_ref": ch["section_ref"],
                 "doc_name": ch["doc_name"],
                 "title": ch["title"],
-                "excerpt": ch["content"][:320] + ("..." if len(ch["content"]) > 320 else ""),
+                "excerpt": self._clean_excerpt(ch["content"]),
                 "similarity_score": ch["similarity_score"],
                 "format": ch["doc_format"]
             })
@@ -324,28 +264,45 @@ class RAGEngine:
 
         return False, "", ""
 
+    def _clean_excerpt(self, text: str, max_chars: int = 220) -> str:
+        """
+        Produce a clean, highly readable excerpt without raw markdown noise or headers.
+        """
+        lines = text.split("\n")
+        cleaned_lines = []
+        for line in lines:
+            line = line.strip()
+            if not line or line.startswith("#") or line.startswith("|") or "Document Reference:" in line or "Applicability:" in line:
+                continue
+            cleaned_lines.append(line)
+
+        joined = " ".join(cleaned_lines).replace("  ", " ").strip()
+        if len(joined) > max_chars:
+            # Cut at word boundary
+            cut = joined[:max_chars].rsplit(" ", 1)[0]
+            return cut + "..."
+        return joined
+
     def _synthesize_answer(self, query: str, top_chunks: List[Dict[str, Any]]) -> str:
         """
-        Synthesize an accurate, well-cited response from the top passages.
+        Synthesize a crisp, limited, and highly readable answer from the primary cited passage.
         """
         lead_chunk = top_chunks[0]
-        secondary_chunk = top_chunks[1] if len(top_chunks) > 1 else None
+        content = lead_chunk["content"]
 
-        # Clean snippet
-        main_content = lead_chunk["content"].strip()
+        # Extract only the key sentences
+        lines = [l.strip() for l in content.split("\n") if l.strip() and not l.startswith("#") and not l.startswith("|")]
+        # Filter informative lines
+        meaningful = [l for l in lines if len(l) > 20 and not l.startswith("Document") and not l.startswith("Applicability")]
+
+        key_summary = meaningful[0] if meaningful else lead_chunk['title']
+        # Clean bullet numbers if any
+        key_summary = re.sub(r'^\d+\.\s*', '', key_summary)
+
+        synthesis = f"**{lead_chunk['section_ref']}** ({lead_chunk['title']}) stipulates:\n\n> \"{key_summary}\""
         
-        # Summarize or extract relevant points
-        points = [p.strip() for p in main_content.split("\n") if p.strip() and not p.startswith("#")]
-        key_statements = "\n".join([f"• {p}" for p in points[:4] if len(p) > 10])
-
-        synthesis = (
-            f"According to **{lead_chunk['section_ref']}** (*{lead_chunk['title']}*):\n\n"
-            f"{key_statements}\n\n"
-        )
-        if secondary_chunk and secondary_chunk['doc_name'] != lead_chunk['doc_name']:
-            synthesis += (
-                f"Additionally, **{secondary_chunk['section_ref']}** (*{secondary_chunk['title']}*) notes:\n"
-                f"• {secondary_chunk['content'][:220]}..."
-            )
+        if len(meaningful) > 1 and len(meaningful[1]) > 20:
+            second_point = re.sub(r'^\d+\.\s*', '', meaningful[1])
+            synthesis += f"\n\nAdditionally: {second_point}"
 
         return synthesis
